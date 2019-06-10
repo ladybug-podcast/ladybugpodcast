@@ -5,7 +5,7 @@ import Logo from "../components/logo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-// import Team from "../components/team"
+import Team from "../components/team"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,6 +16,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
         <SEO title="LadyBug Podcast 🐞" />
         <Logo />
+        <Team />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

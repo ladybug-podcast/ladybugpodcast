@@ -8,8 +8,6 @@
 }
 body {
   margin: 0;
-}
-#app {
   font-family: "Fira Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,7 +27,7 @@ body {
 }
 .logo {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 0px auto;
   width: 100%;
 }
 a {
@@ -68,12 +66,44 @@ a:hover {
 footer {
   text-align: center;
 }
+.hosts {
+  margin: 0.75rem auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  text-align: center;
+  justify-content: space-around;
+}
+.hosts h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+}
+.hosts__item {
+  margin: 20px 0;
+  width: 175px;
+}
+.hosts__item img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 65em) {
   .container {
     max-width: 95%;
   }
 }
-
+@media screen and (max-width: 40em) {
+  .hosts__item img {
+    display: none;
+  }
+  .hosts__item {
+    width: initial;
+    padding: 10px;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 40em) {
   .logo {
     width: 31.25rem;
