@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kelly Vaughn",
+    "img": "./assets/kelly.jpg",
+    "twitter": "kvlly"
+  },
+  {
+    "name": "Ali Spittel",
+    "img": "./assets/ali.png",
+    "twitter": "aspittel"
+  },
+  {
+    "name": "Emma Wedekind",
+    "img": "./assets/emma.png",
+    "twitter": "EmmaWedekind"
+  },
+  {
+    "name": "Lindsey Kopacz",
+    "img": "./assets/lindsey.png",
+    "twitter": "LittleKope"
+  }
+]

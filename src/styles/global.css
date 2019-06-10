@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+:root {
+  --a11y-red: #e71316;
+  --logo-red: #f15457;
+  --logo-gray: #3d292b;
+  --black: #000;
+  --white: #fff;
+}
+body {
+  margin: 0;
+}
+#app {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--logo-gray);
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.container {
+  max-width: 65em;
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+a {
+  color: var(--logo-gray);
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid var(--a11y-red);
+  transition: border 0.2s ease-in, padding 0.2s linear;
+}
+a:hover {
+  border-color: var(--logo-gray);
+  padding-bottom: 1px;
+}
+.button {
+  background-color: var(--a11y-red);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 7px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  border: 2px solid var(--a11y-red);
+  transition: background-color 0.2s linear;
+}
+.button:hover {
+  background-color: transparent;
+}
+.player {
+  margin: 3rem auto;
+  padding: 0 20px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 65em) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .logo {
+    width: 31.25rem;
+  }
+}

@@ -1,0 +1,16 @@
+.hosts {
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+.hosts__item {
+  margin: 20px 0;
+  flex: 1 0 50%;
+}
+@media screen and (min-width: 40em) {
+  .hosts {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    text-align: center;
+  }
+}
