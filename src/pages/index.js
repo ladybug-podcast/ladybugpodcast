@@ -12,6 +12,7 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
 
+    console.log(posts[0])
     return (
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
         <SEO title="LadyBug Podcast 🐞" />
@@ -30,10 +31,11 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
+              <audio src={node.frontmatter.podcast_link} controls />
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.excerpt,
                 }}
               />
             </div>
@@ -64,6 +66,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            podcast_link
           }
         }
       }
