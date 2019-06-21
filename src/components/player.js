@@ -1,45 +1,8 @@
 import React from "react"
-// import PropTypes from "prop-types"
+
+import { formatTime, renderValueNow, renderValueText } from "../utils/util"
 
 import "./player.css"
-
-function formatTime(time) {
-  // Hours, minutes and seconds
-  const hrs = Math.floor(~~(time / 3600)) // eslint-disable-line
-  const mins = Math.floor(~~((time % 3600) / 60)) // eslint-disable-line
-  const secs = Math.floor(time % 60)
-
-  // Output like "1:01" or "4:03:59" or "123:03:59"
-  let ret = ""
-
-  if (hrs > 0) {
-    ret += `${hrs}:${mins < 10 ? "0" : ""}`
-  }
-
-  ret += `${mins}:${secs < 10 ? "0" : ""}`
-  ret += `${secs}`
-  return ret
-}
-
-function renderValueText(time) {
-  const formattedTime = formatTime(time)
-  const split = formattedTime.split(":")
-  const seconds = split.pop()
-  const minutes = split.pop()
-
-  const renderedText =
-    minutes === 0
-      ? `${seconds} seconds`
-      : `${minutes} minutes, ${seconds} seconds`
-  return renderedText
-}
-
-function renderValueNow(time) {
-  const hrs = Math.floor(~~(time / 3600)) // eslint-disable-line
-  const mins = Math.floor(~~((time % 3600) / 60)) // eslint-disable-line
-  const secs = Math.floor(time % 60)
-  return hrs * 3600 + mins * 60 + secs
-}
 
 class Player extends React.Component {
   constructor(props) {
@@ -158,6 +121,22 @@ class Player extends React.Component {
     this.audio.currentTime = this.scrubTime(e)
   }
 
+  minusFifteenSeconds = e => {
+    this.audio.currentTime = this.audio.currentTime - 15
+  }
+
+  plusFifteenSeconds = e => {
+    this.audio.currentTime = this.audio.currentTime + 15
+  }
+
+  moveSlider = e => {
+    if (e.key === "ArrowRight") {
+      this.audio.currentTime = this.audio.currentTime + 5
+    } else if (e.key === "ArrowLeft") {
+      this.audio.currentTime = this.audio.currentTime - 5
+    }
+  }
+
   volume = e => {
     this.audio.volume = e.currentTarget.value
     this.setState({
@@ -208,6 +187,8 @@ class Player extends React.Component {
           <button onClick={this.playPause}>
             {isPlaying ? "pause" : "play"}
           </button>
+          <button onClick={this.minusFifteenSeconds}>-15</button>
+          <button onClick={this.plusFifteenSeconds}>+15</button>
 
           <p>
             {formatTime(currentTime)} / {formatTime(duration)}
@@ -215,13 +196,18 @@ class Player extends React.Component {
         </div>
         <div className="player__section player__section--middle">
           <div className="podcast-player__progress">
-            <div className="podcast-player__progress-loaded" />
+            <div
+              className="podcast-player__progress-loaded"
+              onClick={this.scrub}
+              ref={x => (this.progress = x)}
+            />
             <div
               className="podcast-player__progress-played"
               style={{ width: `${(currentTime / duration) * 100}%` }}
             />
             <div
               orientation="horizontal"
+              onKeyDown={this.moveSlider}
               tabIndex="0"
               className="podcast-player__slider"
               role="slider"
