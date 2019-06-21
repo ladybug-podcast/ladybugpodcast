@@ -1,0 +1,41 @@
+.player {
+  display: grid;
+  grid-template-columns: 6rem auto 10rem;
+}
+
+.podcast-player__progress-loaded {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.5em;
+  background-color: #464646;
+  z-index: 5100;
+}
+
+.podcast-player__progress {
+  position: relative;
+}
+
+.podcast-player__progress-played {
+  background: #f15457;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.5em;
+  z-index: 5200;
+}
+
+.podcast-player__slider {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  background-color: #fdfdfd;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid;
+  border-radius: 0.75em;
+  z-index: 5500;
+}

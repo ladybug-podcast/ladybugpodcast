@@ -58,11 +58,7 @@ a:hover {
 .button:hover {
   background-color: transparent;
 }
-.player {
-  margin: 3rem auto;
-  padding: 0 20px;
-  text-align: center;
-}
+
 footer {
   text-align: center;
 }

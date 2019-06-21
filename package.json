@@ -27,6 +27,7 @@
     "gatsby-transformer-sharp": "^2.1.21",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
+    "react-audio-player": "^0.11.1",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
