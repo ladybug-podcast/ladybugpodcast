@@ -1,5 +1,6 @@
 import React from "react"
 
+import VolumeBars from "./VolumeBars"
 import { formatTime, renderValueNow, renderValueText } from "../utils/util"
 
 import "./player.css"
@@ -222,7 +223,7 @@ class Player extends React.Component {
             </div>
           </div>
           <div className="player__section player__section--right">
-            somethings
+            <VolumeBars volume={this.volume} />
           </div>
         </div>
         <span style={{ fontSize: "0.625rem" }}>
