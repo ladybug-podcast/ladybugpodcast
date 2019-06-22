@@ -35,7 +35,6 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <audio src={node.frontmatter.podcast_link} controls />
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
@@ -70,7 +69,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            podcast_link
+            audio
           }
         }
       }

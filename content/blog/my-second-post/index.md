@@ -1,8 +1,9 @@
 ---
-title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
-podcast_link: my_source.mp3
+title: older post
+date: "2019-06-17"
+audio: "https://www.parler.io/audio/7119149108/dbd2a6e8f7bcbfd853450c16d776560d9259319c.568362ee-3b2c-4ac1-8d7b-4cd0b3d99d20.mp3"
 ---
+
 Wow! I love blogging so much already.
 
 Did you know that "despite its name, salted duck eggs can also be made from

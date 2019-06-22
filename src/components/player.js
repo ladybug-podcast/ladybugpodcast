@@ -175,53 +175,64 @@ class Player extends React.Component {
     const { show } = this.props
 
     return (
-      <div className="player">
-        <audio
-          ref={audio => (this.audio = audio)}
-          onTimeUpdate={this.timeUpdate}
-          onVolumeChange={this.volumeUpdate}
-          onLoadedMetadata={this.groupUpdates}
-          src={show.audio}
-        />
-        <div className="player__section player__section--left">
-          <button onClick={this.playPause}>
-            {isPlaying ? "pause" : "play"}
-          </button>
-          <button onClick={this.minusFifteenSeconds}>-15</button>
-          <button onClick={this.plusFifteenSeconds}>+15</button>
+      <React.Fragment>
+        <div className="player">
+          <audio
+            ref={audio => (this.audio = audio)}
+            onTimeUpdate={this.timeUpdate}
+            onVolumeChange={this.volumeUpdate}
+            onLoadedMetadata={this.groupUpdates}
+            src={show.audio}
+          />
+          <div className="player__section player__section--left">
+            <button onClick={this.playPause}>
+              {isPlaying ? "pause" : "play"}
+            </button>
+            <button onClick={this.minusFifteenSeconds}>-15</button>
+            <button onClick={this.plusFifteenSeconds}>+15</button>
 
-          <p>
-            {formatTime(currentTime)} / {formatTime(duration)}
-          </p>
-        </div>
-        <div className="player__section player__section--middle">
-          <div className="podcast-player__progress">
-            <div
-              className="podcast-player__progress-loaded"
-              onClick={this.scrub}
-              ref={x => (this.progress = x)}
-            />
-            <div
-              className="podcast-player__progress-played"
-              style={{ width: `${(currentTime / duration) * 100}%` }}
-            />
-            <div
-              orientation="horizontal"
-              onKeyDown={this.moveSlider}
-              tabIndex="0"
-              className="podcast-player__slider"
-              role="slider"
-              aria-label="audio timeline"
-              aria-valuemin="0"
-              aria-valuemax={duration}
-              aria-valuetext={renderValueText(currentTime)}
-              aria-valuenow={renderValueNow(currentTime)}
-              style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
-            />
+            <p>
+              {formatTime(currentTime)} / {formatTime(duration)}
+            </p>
+          </div>
+          <div className="player__section player__section--middle">
+            <div className="podcast-player__progress">
+              <div
+                className="podcast-player__progress-loaded"
+                onClick={this.scrub}
+                ref={x => (this.progress = x)}
+              />
+              <div
+                className="podcast-player__progress-played"
+                style={{ width: `${(currentTime / duration) * 100}%` }}
+              />
+              <div
+                orientation="horizontal"
+                onKeyDown={this.moveSlider}
+                tabIndex="0"
+                className="podcast-player__slider"
+                role="slider"
+                aria-label="audio timeline"
+                aria-valuemin="0"
+                aria-valuemax={duration}
+                aria-valuetext={renderValueText(currentTime)}
+                aria-valuenow={renderValueNow(currentTime)}
+                style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
+              />
+            </div>
+          </div>
+          <div className="player__section player__section--right">
+            somethings
           </div>
         </div>
-        <div className="player__section player__section--right">somethings</div>
-      </div>
+        <span style={{ fontSize: "0.625rem" }}>
+          This player's code is loosely copy and pasted from{" "}
+          <a href="https://github.com/wesbos/Syntax/blob/master/components/Player.js">
+            Syntax.fm
+          </a>
+          . Thanks Wes and Scott for keeping your site open source!
+        </span>
+      </React.Fragment>
     )
   }
 }
