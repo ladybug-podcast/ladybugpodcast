@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
-        <SEO title="LadyBug Podcast 🐞" />
+        <SEO title="Ladybug Podcast 🐞" />
         <Logo />
         <Team />
         <Player show={frontmatter} />
