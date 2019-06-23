@@ -91,7 +91,6 @@ a:hover {
 footer {
   border-top: 1px solid var(--a11y-red);
   text-align: center;
-  position: absolute;
   margin: 0 auto;
   bottom: 0px;
   padding: 10px;
