@@ -73,11 +73,7 @@ class VolumeBars extends Component {
               />
               <label
                 htmlFor={item.vol}
-                style={
-                  item.checked
-                    ? { background: "#f15457" }
-                    : { background: "#e4e4e4" }
-                }
+                className={item.checked ? "checked" : ""}
               >
                 <span className="sr-only">{item.level}</span>
               </label>

@@ -96,14 +96,24 @@
   height: 2.5rem;
 }
 
+#vol10 + label {
+  /*Sorry this sucks */
+  border-left: 1px solid #1d1d1d;
+}
+
+/* #e4e4e4  */
+/* #f15457 */
+.player__volume label {
+  background: #e4e4e4;
+}
+.player__volume label.checked {
+  background: #f15457;
+}
 .player__volume input:focus + label {
-  background: blue;
+  background: #1d1d1d;
 }
 
 .player__inputs fieldset {
   margin: 0;
   border: none;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
