@@ -144,7 +144,8 @@ audio {
   white-space: nowrap !important;
 }
 @media screen and (max-width: 65em) {
-  .container {
+  .container,
+  footer {
     max-width: 95%;
   }
 }
