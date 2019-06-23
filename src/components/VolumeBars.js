@@ -55,7 +55,8 @@ class VolumeBars extends Component {
 
   render() {
     return (
-      <Fragment>
+      <fieldset>
+        <legend>Volume</legend>
         {this.state.volumeBarList.map((item, index) => (
           <Fragment key={item.integer}>
             <input
@@ -73,7 +74,7 @@ class VolumeBars extends Component {
               htmlFor={item.vol}
               style={
                 item.checked
-                  ? { background: "#03fff3" }
+                  ? { background: "#f15457" }
                   : { background: "#e4e4e4" }
               }
             >
@@ -81,7 +82,7 @@ class VolumeBars extends Component {
             </label>
           </Fragment>
         ))}
-      </Fragment>
+      </fieldset>
     )
   }
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import { FaPlay, FaPause, FaUndo, FaRedo } from "react-icons/fa"
 
 import VolumeBars from "./VolumeBars"
 import { formatTime, renderValueNow, renderValueText } from "../utils/util"
@@ -74,7 +75,8 @@ class Player extends React.Component {
 
   timeUpdate = e => {
     const { show } = this.props
-    const { timeWasLoaded, currentTime } = this.state
+    const { timeWasLoaded, currentTime, duration } = this.state
+
     if (timeWasLoaded) {
       const lp = localStorage.getItem(`lastPlayed${show.number}`)
 
@@ -89,6 +91,8 @@ class Player extends React.Component {
       if (Number.isNaN(progressTime)) return
       this.setState({ progressTime, currentTime, duration })
     }
+
+    if (currentTime === duration) this.setState({ isPlaying: false })
   }
 
   volumeUpdate = e => {
@@ -172,46 +176,68 @@ class Player extends React.Component {
   }
 
   render() {
-    const { isPlaying, currentTime, duration } = this.state
+    const { isPlaying, currentTime, duration, playbackRate } = this.state
     const { show } = this.props
 
     return (
       <React.Fragment>
-        <div className="player">
+        <div className="player" aria-labelledby="podcast-title">
           <audio
             ref={audio => (this.audio = audio)}
             onTimeUpdate={this.timeUpdate}
+            onEnded={() => this.setState({ isPlaying: false })}
             onVolumeChange={this.volumeUpdate}
             onLoadedMetadata={this.groupUpdates}
             src={show.audio}
           />
           <div className="player__section player__section--left">
-            <button onClick={this.playPause}>
-              {isPlaying ? "pause" : "play"}
-            </button>
-            <button onClick={this.minusFifteenSeconds}>-15</button>
-            <button onClick={this.plusFifteenSeconds}>+15</button>
-
-            <p>
+            <div className="player__buttons">
+              {" "}
+              <button className="player__icon" onClick={this.playPause}>
+                {isPlaying ? <FaPause /> : <FaPlay />}
+                <span className="sr-only">{isPlaying ? "pause" : "play"}</span>
+              </button>
+              <button
+                className="player__rewind"
+                aria-label="Rewind 15 Seconds"
+                onClick={this.minusFifteenSeconds}
+              >
+                <span>
+                  <FaUndo />
+                </span>
+                <span className="seconds">15</span>
+              </button>
+              <button
+                className="player__fast-forward"
+                aria-label="Fast Forward 15 Seconds"
+                onClick={this.plusFifteenSeconds}
+              >
+                <span>
+                  <FaRedo />
+                </span>
+                <span className="seconds">15</span>
+              </button>
+            </div>
+            <p style={{ margin: 0 }}>
               {formatTime(currentTime)} / {formatTime(duration)}
             </p>
           </div>
           <div className="player__section player__section--middle">
-            <div className="podcast-player__progress">
+            <div
+              className="player__progress"
+              onClick={this.scrub}
+              ref={x => (this.progress = x)}
+            >
+              <div className="player__progress-loaded" />
               <div
-                className="podcast-player__progress-loaded"
-                onClick={this.scrub}
-                ref={x => (this.progress = x)}
-              />
-              <div
-                className="podcast-player__progress-played"
+                className="player__progress-played"
                 style={{ width: `${(currentTime / duration) * 100}%` }}
               />
               <div
                 orientation="horizontal"
                 onKeyDown={this.moveSlider}
                 tabIndex="0"
-                className="podcast-player__slider"
+                className="player__slider"
                 role="slider"
                 aria-label="audio timeline"
                 aria-valuemin="0"
@@ -221,9 +247,27 @@ class Player extends React.Component {
                 style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
               />
             </div>
+            <p id="podcast-title" style={{ margin: 0 }}>
+              {show.title}
+            </p>
           </div>
           <div className="player__section player__section--right">
-            <VolumeBars volume={this.volume} />
+            <button
+              onClick={this.speedUp}
+              onContextMenu={this.speedDown}
+              className="player__speed"
+              type="button"
+            >
+              <p>Speed</p>
+              <span className="player__speeddisplay">
+                {playbackRate} &times;
+              </span>
+            </button>
+            <div className="player__volume">
+              <div className="player__inputs">
+                <VolumeBars volume={this.volume} />
+              </div>
+            </div>
           </div>
         </div>
         <span style={{ fontSize: "0.625rem" }}>
