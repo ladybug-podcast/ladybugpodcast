@@ -1,12 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FaGooglePlay, FaSpotify, FaItunes, FaTwitter } from "react-icons/fa"
 
 export default () => (
   <div className="nav">
     <div className="links">
-      <a href="/team">Team</a>
-      <a href="/newsletter">Newsletter</a>
-      <a href="/contact">Contact</a>
+      <Link to="/team">Team</Link>
+      <Link to="/newsletter">Newsletter</Link>
+      <Link to="/contact">Contact</Link>
     </div>
     <div className="subscribe-links">
       <a href="https://twitter.com/ladybugpodcast">
