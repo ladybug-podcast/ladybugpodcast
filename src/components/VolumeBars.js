@@ -56,7 +56,7 @@ class VolumeBars extends Component {
   render() {
     return (
       <fieldset>
-        <legend>Volume</legend>
+        <legend className="sr-only">Volume</legend>
         <div className="player__volume-controls">
           {this.state.volumeBarList.map((item, index) => (
             <Fragment key={item.integer}>
