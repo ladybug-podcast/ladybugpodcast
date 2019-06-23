@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `LadyBug Podcast`,
+    title: `Ladybug Podcast 🐞`,
     author: `Lindsey Kopacz, Emma Wedekind, Kelly Vaughn, Ali Spittel`,
     description: `A podcast about tech `,
     siteUrl: `https://ladybug.dev`,

@@ -9,7 +9,6 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
-
 function Bio() {
   return (
     <StaticQuery
@@ -32,6 +31,13 @@ function Bio() {
               className="logo"
             />
             <h1 className="visually-hidden">LadyBug Podcast</h1>
+            <h2 className="by-line">
+              Listen to <a href="https://thetaproom.com/">Kelly Vaughn</a>,{" "}
+              <a href="https://alispit.tel">Ali Spittel</a>,{" "}
+              <a href="https://emmawedekind.com/">Emma Wedekind</a>, &amp;&amp;{" "}
+              <a href="https://www.a11ywithlindsey.com/">Lindsey Kopacz</a>{" "}
+              debug the tech industry.
+            </h2>
           </Link>
         )
       }}
