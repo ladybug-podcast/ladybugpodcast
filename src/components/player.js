@@ -251,7 +251,7 @@ class Player extends React.Component {
                 aria-valuemax={duration}
                 aria-valuetext={renderValueText(currentTime)}
                 aria-valuenow={renderValueNow(currentTime)}
-                style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
+                style={{ left: `${(currentTime / duration - 0.02) * 100}%` }}
               />
             </div>
             <div className="player__title">
