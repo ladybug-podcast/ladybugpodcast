@@ -142,5 +142,6 @@
 @media only screen and (max-width: 767px) {
   .player {
     grid-template-rows: 4rem 4rem;
+    grid-row-gap: 1rem;
   }
 }
