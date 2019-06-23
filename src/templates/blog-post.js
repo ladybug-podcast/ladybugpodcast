@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Logo from "../components/logo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Player from "../components/player"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -29,6 +30,8 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+        <Player show={post.frontmatter} />
+        <p>{post.frontmatter.description}</p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -84,6 +87,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        audio
       }
     }
   }

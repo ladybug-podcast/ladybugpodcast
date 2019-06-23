@@ -7,17 +7,21 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Team from "../components/team"
 
+import Player from "../components/player"
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
+    const { frontmatter } = posts[0].node
 
-    console.log(posts[0])
     return (
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
         <SEO title="LadyBug Podcast 🐞" />
         <Logo />
         <Team />
+        <Player show={frontmatter} />
+
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -31,7 +35,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <audio src={node.frontmatter.podcast_link} controls />
+
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
@@ -66,7 +70,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            podcast_link
+            audio
           }
         }
       }

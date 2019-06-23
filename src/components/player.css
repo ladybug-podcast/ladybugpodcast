@@ -1,0 +1,119 @@
+.player {
+  display: grid;
+  grid-template-columns: 8rem auto 11rem;
+  grid-column-gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.player__section--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player__buttons {
+  display: flex;
+}
+
+.player__buttons button {
+  border: none;
+}
+
+.player__icon {
+  padding-left: 0;
+}
+
+.player__rewind,
+.player__fast-forward {
+  display: flex;
+}
+
+.seconds {
+  margin-left: 2px;
+  margin-top: -3px;
+}
+
+.player__section--middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player__progress-loaded {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.5em;
+  background-color: #464646;
+  z-index: 5100;
+}
+
+.player__progress {
+  position: relative;
+}
+
+.player__progress-played {
+  background: #f15457;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1.5em;
+  z-index: 5200;
+}
+
+.player__slider {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  background-color: #fdfdfd;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.75em;
+  z-index: 5500;
+}
+
+.player__section--right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player__speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+}
+
+.player__volume input + label {
+  border: 1px solid #1d1d1d;
+  border-left: none;
+  display: inline-block;
+  width: 8px;
+  height: 2.5rem;
+}
+
+#vol10 + label {
+  /*Sorry this sucks */
+  border-left: 1px solid #1d1d1d;
+}
+
+/* #e4e4e4  */
+/* #f15457 */
+.player__volume label {
+  background: #e4e4e4;
+}
+.player__volume label.checked {
+  background: #f15457;
+}
+.player__volume input:focus + label {
+  background: #1d1d1d;
+}
+
+.player__inputs fieldset {
+  margin: 0;
+  border: none;
+}
