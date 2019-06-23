@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--logo-gray);
+  height: 100%;
 }
 .visually-hidden {
   position: absolute !important;
@@ -30,6 +31,31 @@ body {
   margin: 20px auto 0px auto;
   width: 100%;
 }
+.nav {
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+.nav a {
+  border-bottom: none;
+  box-shadow: none;
+  color: #404040;
+  padding: 8px;
+}
+.by-line a {
+  color: var(--logo-red);
+  border-bottom: none;
+  box-shadow: none;
+}
+.nav svg {
+  vertical-align: middle;
+}
+
 a {
   color: var(--logo-gray);
   text-decoration: none;
@@ -58,9 +84,18 @@ a:hover {
 .button:hover {
   background-color: transparent;
 }
-
+.episode {
+  max-width: 50rem;
+  margin: 0 auto;
+}
 footer {
+  border-top: 1px solid var(--a11y-red);
   text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0px;
+  padding: 10px;
+  width: 65em;
 }
 .hosts {
   margin: 0.75rem auto;
@@ -75,6 +110,13 @@ footer {
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
+}
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 1.5rem;
+  color: #464646;
+  font-family: "Fira Sans", sans-serif;
 }
 .hosts__item {
   margin: 20px 0;

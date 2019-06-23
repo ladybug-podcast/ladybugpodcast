@@ -19,6 +19,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        <Logo />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -38,7 +39,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Logo />
 
         <ul
           style={{
