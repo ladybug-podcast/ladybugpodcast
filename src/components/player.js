@@ -258,7 +258,7 @@ class Player extends React.Component {
               className="player__speed"
               type="button"
             >
-              <p>Speed</p>
+              <div>Speed</div>
               <span className="player__speeddisplay">
                 {playbackRate} &times;
               </span>

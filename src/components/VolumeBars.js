@@ -57,31 +57,33 @@ class VolumeBars extends Component {
     return (
       <fieldset>
         <legend>Volume</legend>
-        {this.state.volumeBarList.map((item, index) => (
-          <Fragment key={item.integer}>
-            <input
-              onClick={() => {
-                this.handleOnClick(index)
-              }}
-              onChange={this.props.volume}
-              type="radio"
-              name="volume"
-              value={item.deci}
-              id={item.vol}
-              className="sr-only"
-            />
-            <label
-              htmlFor={item.vol}
-              style={
-                item.checked
-                  ? { background: "#f15457" }
-                  : { background: "#e4e4e4" }
-              }
-            >
-              <span className="sr-only">{item.level}</span>
-            </label>
-          </Fragment>
-        ))}
+        <div className="player__volume-controls">
+          {this.state.volumeBarList.map((item, index) => (
+            <Fragment key={item.integer}>
+              <input
+                onClick={() => {
+                  this.handleOnClick(index)
+                }}
+                onChange={this.props.volume}
+                type="radio"
+                name="volume"
+                value={item.deci}
+                id={item.vol}
+                className="sr-only"
+              />
+              <label
+                htmlFor={item.vol}
+                style={
+                  item.checked
+                    ? { background: "#f15457" }
+                    : { background: "#e4e4e4" }
+                }
+              >
+                <span className="sr-only">{item.level}</span>
+              </label>
+            </Fragment>
+          ))}
+        </div>
       </fieldset>
     )
   }
