@@ -52,6 +52,7 @@
   height: 1.5em;
   background-color: #464646;
   z-index: 5100;
+  border-radius: 0.75em;
 }
 
 .player__progress {
@@ -66,6 +67,7 @@
   top: 0;
   height: 1.5em;
   z-index: 5200;
+  border-radius: 0.75em;
 }
 
 .player__slider {

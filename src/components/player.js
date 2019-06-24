@@ -238,7 +238,7 @@ class Player extends React.Component {
               <div className="player__progress-loaded" />
               <div
                 className="player__progress-played"
-                style={{ width: `${(currentTime / duration) * 100}%` }}
+                style={{ width: `${(currentTime / duration + 0.015) * 100}%` }}
               />
               <div
                 orientation="horizontal"
@@ -251,7 +251,7 @@ class Player extends React.Component {
                 aria-valuemax={duration}
                 aria-valuetext={renderValueText(currentTime)}
                 aria-valuenow={renderValueNow(currentTime)}
-                style={{ left: `${(currentTime / duration - 0.02) * 100}%` }}
+                style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
               />
             </div>
             <div className="player__title">
