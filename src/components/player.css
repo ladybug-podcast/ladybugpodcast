@@ -17,13 +17,18 @@
 }
 
 .player__buttons button {
-  border: none;
   background: transparent;
+  margin-right: 1rem;
+  /* border: 1px solid; */
+  width: 60px;
+  height: 50px;
+  padding-top: 8px;
+  box-shadow: 0 2px -5px rgba(0, 0, 0, 0.11);
 }
 
-.player__icon {
+/* .player__icon {
   padding-left: 0;
-}
+} */
 
 .player__rewind,
 .player__fast-forward {
@@ -131,7 +136,7 @@
 
 @media only screen and (min-width: 767px) {
   .player {
-    grid-template-columns: 7rem 5rem auto;
+    grid-template-columns: 14rem 5rem auto;
   }
   .player__section--right {
     grid-column-start: 3;

@@ -194,7 +194,7 @@ class Player extends React.Component {
             <div className="player__buttons">
               {" "}
               <button className="player__icon" onClick={this.playPause}>
-                {isPlaying ? <FaPause /> : <FaPlay />}
+                {isPlaying ? <FaPause size="1.5em" /> : <FaPlay size="1.5em" />}
                 <span className="sr-only">{isPlaying ? "pause" : "play"}</span>
               </button>
               <button
@@ -203,7 +203,7 @@ class Player extends React.Component {
                 onClick={this.minusFifteenSeconds}
               >
                 <span>
-                  <FaUndo />
+                  <FaUndo size="1.5em" />
                 </span>
                 <span className="seconds">15</span>
               </button>
@@ -213,7 +213,7 @@ class Player extends React.Component {
                 onClick={this.plusFifteenSeconds}
               >
                 <span>
-                  <FaRedo />
+                  <FaRedo size="1.5em" />
                 </span>
                 <span className="seconds">15</span>
               </button>
