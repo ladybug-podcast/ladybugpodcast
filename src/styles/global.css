@@ -42,11 +42,30 @@ body {
   align-items: center;
   margin: 40px 0;
 }
+@media (max-width: 600px){
+  .nav {
+    flex-wrap: wrap;
+  }
+  .nav .links, .nav .subscribe-links {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+  .nav .links {
+    order: 2;
+  }
+  .nav .subscribe-links {
+    order: 1;
+  }
+}
 .nav a {
   border-bottom: none;
   box-shadow: none;
   color: #404040;
   padding: 8px;
+}
+.by-line {
+  line-height: 1.3;
 }
 .by-line a {
   color: var(--logo-red);
@@ -167,4 +186,9 @@ audio {
   .logo {
     width: 31.25rem;
   }
+}
+
+.player + span {
+  display: block;
+  margin-bottom: 4em;
 }
