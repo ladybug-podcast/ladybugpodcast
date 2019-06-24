@@ -44,8 +44,12 @@ function SEO({ description, lang, meta, keywords, title, image, card }) {
                 content: `website`,
               },
               {
+                name: `og:image`,
+                content: `${socialimage}`,
+              },
+              {
                 name: `twitter:card`,
-                content: card || `summary`,
+                content: card || `summary_large_image`,
               },
               {
                 name: `twitter:creator`,
