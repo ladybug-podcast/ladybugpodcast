@@ -192,3 +192,8 @@ audio {
   display: block;
   margin-bottom: 4em;
 }
+
+.post-meta span {
+  display: inline-block;
+  margin-right: 8px;
+}

@@ -29,6 +29,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.title} {post.slug}
         </h1>
         <p
+          className="post-meta"
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -36,8 +37,9 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          <span>{post.frontmatter.date}</span>
           <a
+            className="twitter-share"
             target="_blank"
             onClick="ga('send', 'social', 'Twitter', 'Share', {post.frontmatter.title});"
             href={twitterShare}
