@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
     const shareTitle = `Listen to ${
       post.frontmatter.title
     }, a @LadybugPodcast episode by @kvlly, @emmawedekind, @aspittel, and @littlekope!`
-    const shareUrl = `https://ladybug.dev/episodes/${post.slug}`
+    const shareUrl = `https://ladybug.dev/episodes/${post.frontmatter.slug}`
     const twitterShare = `//twitter.com/share?text=${shareTitle}&amp;url=${shareUrl}`
 
     return (
@@ -106,6 +106,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         audio
+        slug
       }
     }
   }
