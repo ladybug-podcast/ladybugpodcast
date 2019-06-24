@@ -16,16 +16,25 @@ export default () => (
       <Link to="/contact">Contact</Link>
     </div>
     <div className="subscribe-links">
-      <a href="https://twitter.com/ladybugpodcast">
+      <a href="https://twitter.com/ladybugpodcast" target="_blank">
         <FaTwitter size="2em" title="Follow on Twitter" />
       </a>
-      <a href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625">
+      <a
+        href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625"
+        target="_blank"
+      >
         <FaItunes size="2em" title="subscribe on Apple Podcasts" />
       </a>
-      <a href="https://play.google.com/music/listen?u=0#/ps/I4lyvappbarpo5olinvd2gxh3km">
+      <a
+        href="https://play.google.com/music/listen?u=0#/ps/I4lyvappbarpo5olinvd2gxh3km"
+        target="_blank"
+      >
         <FaGooglePlay size="2em" title="subscribe on Google Play" />
       </a>
-      <a href="https://open.spotify.com/show/1KBO1tSnm0XRlEILmqt7Em">
+      <a
+        href="https://open.spotify.com/show/1KBO1tSnm0XRlEILmqt7Em"
+        target="_blank"
+      >
         <FaSpotify size="2em" title="subscribe on Spotify" />
       </a>
     </div>
