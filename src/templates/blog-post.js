@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Logo from "../components/logo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Player from "../components/player"
@@ -19,7 +18,6 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <Logo />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
