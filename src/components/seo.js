@@ -44,8 +44,12 @@ function SEO({ description, lang, meta, keywords, title, image, card }) {
                 content: `website`,
               },
               {
+                property: `og:url`,
+                content: `https://ladybug.dev`,
+              },
+              {
                 name: `og:image`,
-                content: `${socialimage}`,
+                content: `https://ladybug.dev${socialimage}`,
               },
               {
                 name: `twitter:card`,
@@ -65,7 +69,7 @@ function SEO({ description, lang, meta, keywords, title, image, card }) {
               },
               {
                 name: `twitter:image`,
-                content: `${socialimage}`,
+                content: `https://ladybug.dev${socialimage}`,
               },
             ]
               .concat(
