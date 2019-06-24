@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Header from './header'
+import Footer from './footer'
 
 class Layout extends React.Component {
   render() {
@@ -9,13 +11,9 @@ class Layout extends React.Component {
 
     return (
       <React.Fragment>
+        <Header />
         <main className="container">{children}</main>
-        <footer>
-          <p>
-            &copy; Kelly Vaughn, Ali Spittel, Emma Wedekind &amp;&amp; Lindsey
-            Kopacz
-          </p>
-        </footer>
+        <Footer />
       </React.Fragment>
     )
   }
