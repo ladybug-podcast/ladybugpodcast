@@ -4,10 +4,8 @@ import { FaPlayCircle } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 
-import Logo from "../components/logo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Nav from "../components/nav"
 
 class BlogIndex extends React.Component {
   render() {

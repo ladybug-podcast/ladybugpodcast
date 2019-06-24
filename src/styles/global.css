@@ -30,6 +30,7 @@ body {
   display: block;
   margin: 20px auto 0px auto;
   width: 100%;
+  max-width: 320px;
 }
 .nav {
   border-bottom: 2px solid #ccc;
@@ -91,10 +92,11 @@ a:hover {
 footer {
   border-top: 1px solid var(--a11y-red);
   text-align: center;
-  margin: 0 auto;
+  margin: 60px auto;
   bottom: 0px;
   padding: 10px;
   width: 65em;
+  font-size: 0.85em;
 }
 .hosts {
   margin: 0.75rem auto;
@@ -125,6 +127,12 @@ h2 {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+@media (max-width: 800px){
+  .hosts {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
 audio {
   margin: 20px 0;
   display: block;
@@ -149,9 +157,6 @@ audio {
   }
 }
 @media screen and (max-width: 40em) {
-  .hosts__item img {
-    display: none;
-  }
   .hosts__item {
     width: initial;
     padding: 10px;

@@ -6,7 +6,13 @@ export default () => (
   <div className="nav">
     <div className="links">
       <Link to="/team">Team</Link>
-      <Link to="/newsletter">Newsletter</Link>
+      <a
+        href="https://dev.us3.list-manage.com/subscribe?u=a1e57cb6d1b212102fc5d5265&id=dd3f5f0b2d"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Newsletter
+      </a>
       <Link to="/contact">Contact</Link>
     </div>
     <div className="subscribe-links">

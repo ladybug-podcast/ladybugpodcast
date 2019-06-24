@@ -5,7 +5,7 @@ module.exports = {
     description: `A podcast about tech `,
     siteUrl: `https://ladybug.dev`,
     social: {
-      twitter: `ladybugpod`,
+      twitter: `ladybugpodcast`,
     },
   },
   plugins: [
