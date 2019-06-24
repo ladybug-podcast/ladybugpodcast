@@ -11,7 +11,7 @@ class Team extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Ladybug Podcast | Team" />
+        <SEO title="Team | Ladybug Podcast 🐞" />
         <div className="team">
           <div className="hosts">
             <div className="hosts__item">
