@@ -35,7 +35,7 @@ function Bio() {
             <h1 className="visually-hidden">LadyBug Podcast</h1>
             <h2 className="by-line">
               Listen to{" "}
-              <a href="https://thetaproom.com/" target="_blank">
+              <a href="https://kvlly.com/" target="_blank">
                 Kelly Vaughn
               </a>
               ,{" "}
