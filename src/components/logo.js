@@ -15,30 +15,44 @@ function Bio() {
       query={bioQuery}
       render={data => {
         return (
-          <Link
-            style={{
-              textDecoration: `none`,
-              borderBottom: `none`,
-              boxShadow: `none`,
-              margin: `0 auto`,
-            }}
-            to={`/`}
-          >
-            <Image
-              fluid={data.avatar.childImageSharp.fluid}
-              alt="LadyBug Podcast"
-              width="500"
-              className="logo"
-            />
+          <React.Fragment>
+            <Link
+              style={{
+                textDecoration: `none`,
+                borderBottom: `none`,
+                boxShadow: `none`,
+                margin: `0 auto`,
+              }}
+              to={`/`}
+            >
+              <Image
+                fluid={data.avatar.childImageSharp.fluid}
+                alt="LadyBug Podcast"
+                width="500"
+                className="logo"
+              />
+            </Link>
             <h1 className="visually-hidden">LadyBug Podcast</h1>
             <h2 className="by-line">
-              Listen to <a href="https://thetaproom.com/">Kelly Vaughn</a>,{" "}
-              <a href="https://alispit.tel">Ali Spittel</a>,{" "}
-              <a href="https://emmawedekind.com/">Emma Wedekind</a>, &amp;&amp;{" "}
-              <a href="https://www.a11ywithlindsey.com/">Lindsey Kopacz</a>{" "}
+              Listen to{" "}
+              <a href="https://thetaproom.com/" target="_blank">
+                Kelly Vaughn
+              </a>
+              ,{" "}
+              <a href="https://alispit.tel" target="_blank">
+                Ali Spittel
+              </a>
+              ,{" "}
+              <a href="https://emmawedekind.com/" target="_blank">
+                Emma Wedekind
+              </a>
+              , &amp;&amp;{" "}
+              <a href="https://www.a11ywithlindsey.com/" target="_blank">
+                Lindsey Kopacz
+              </a>{" "}
               debug the tech industry.
             </h2>
-          </Link>
+          </React.Fragment>
         )
       }}
     />
