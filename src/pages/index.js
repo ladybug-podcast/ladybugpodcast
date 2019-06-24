@@ -11,7 +11,6 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMarkdownRemark.edges
-    const { frontmatter } = posts[0].node
 
     return (
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
