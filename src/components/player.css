@@ -1,9 +1,8 @@
 .player {
   display: grid;
-  grid-template-columns: 47% 50%;
+  grid-template-columns: 66% 31%;
   grid-column-gap: 1rem;
   padding: 1rem;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 .player__section--left {
@@ -139,7 +138,7 @@
 
 @media only screen and (max-width: 767px) {
   .player {
-    grid-template-rows: 4rem 4rem;
+    grid-template-rows: 5rem 4rem;
     grid-row-gap: 1rem;
   }
 }
