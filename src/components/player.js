@@ -223,6 +223,13 @@ class Player extends React.Component {
             </p>
           </div>
           <div className="player__section player__section--middle">
+            <div className="player__volume">
+              <div className="player__inputs">
+                <VolumeBars volume={this.volume} />
+              </div>
+            </div>
+          </div>
+          <div className="player__section player__section--right">
             <div
               className="player__progress"
               onClick={this.scrub}
@@ -231,7 +238,7 @@ class Player extends React.Component {
               <div className="player__progress-loaded" />
               <div
                 className="player__progress-played"
-                style={{ width: `${(currentTime / duration) * 100}%` }}
+                style={{ width: `${(currentTime / duration + 0.015) * 100}%` }}
               />
               <div
                 orientation="horizontal"
@@ -247,26 +254,21 @@ class Player extends React.Component {
                 style={{ left: `${(currentTime / duration - 0.01) * 100}%` }}
               />
             </div>
-            <p id="podcast-title" style={{ margin: 0 }}>
-              {show.title}
-            </p>
-          </div>
-          <div className="player__section player__section--right">
-            <button
-              onClick={this.speedUp}
-              onContextMenu={this.speedDown}
-              className="player__speed"
-              type="button"
-            >
-              <div>Speed</div>
-              <span className="player__speeddisplay">
-                {playbackRate} &times;
-              </span>
-            </button>
-            <div className="player__volume">
-              <div className="player__inputs">
-                <VolumeBars volume={this.volume} />
-              </div>
+            <div className="player__title">
+              <p id="podcast-title" style={{ margin: 0 }}>
+                {show.title}
+              </p>
+              <button
+                onClick={this.speedUp}
+                onContextMenu={this.speedDown}
+                className="player__speed"
+                type="button"
+                aria-label="Update Speed by .25"
+              >
+                <span className="player__speeddisplay">
+                  {playbackRate}&times;
+                </span>
+              </button>
             </div>
           </div>
         </div>
