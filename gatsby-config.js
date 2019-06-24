@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ladybug Podcast 🐞`,
+    title: `Ladybug Podcast 🐞 | Women in Tech Podcast`,
     author: `Lindsey Kopacz, Emma Wedekind, Kelly Vaughn, Ali Spittel`,
-    description: `A podcast about tech `,
+    description: `Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.`,
     siteUrl: `https://ladybug.dev`,
     social: {
       twitter: `ladybugpodcast`,
@@ -57,13 +57,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Laybug Podcast`,
+        short_name: `LadybugPodcast`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/logo.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
