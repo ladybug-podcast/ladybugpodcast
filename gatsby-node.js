@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 audio
                 description
+                slug
               }
             }
           }

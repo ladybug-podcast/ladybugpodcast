@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ladybug Podcast 🐞 | Women in Tech Podcast`,
+    title: ``,
     author: `Lindsey Kopacz, Emma Wedekind, Kelly Vaughn, Ali Spittel`,
     description: `Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.`,
     siteUrl: `https://ladybug.dev`,

@@ -5,21 +5,31 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Player from "../components/player"
 import { rhythm, scale } from "../utils/typography"
+import { FaTwitter } from "react-icons/fa"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const seoTitle = `${post.frontmatter.title} | Ladybug Podcast 🐞`
+    const shareTitle = `Listen to ${
+      post.frontmatter.title
+    }, a @LadybugPodcast episode by @kvlly, @emmawedekind, @aspittel, and @littlekope!`
+    const shareUrl = `https://ladybug.dev/episodes/${post.frontmatter.slug}`
+    const twitterShare = `//twitter.com/share?text=${shareTitle}&amp;url=${shareUrl}`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
+          title={seoTitle}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>
+          {post.frontmatter.title} {post.slug}
+        </h1>
         <p
+          className="post-meta"
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -27,7 +37,18 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          <span>{post.frontmatter.date}</span>
+          <a
+            className="twitter-share"
+            target="_blank"
+            onClick="ga('send', 'social', 'Twitter', 'Share', {post.frontmatter.title});"
+            href={twitterShare}
+          >
+            <FaTwitter size="1em" title="Share on Twitter" />
+            <span class="visually-hidden">
+              Share {post.frontmatter.title} on Twitter
+            </span>
+          </a>
         </p>
         <Player show={post.frontmatter} />
         <p>{post.frontmatter.description}</p>
@@ -75,6 +96,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -86,6 +108,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         audio
+        slug
       }
     }
   }

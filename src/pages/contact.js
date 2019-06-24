@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 class Contact extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="Team | Ladybug Podcast 🐞" />
         <div className="contact">
           <div className="container">
             To give us feedback on our show, please DM us on{" "}
