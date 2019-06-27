@@ -30,10 +30,13 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
 
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {node.frontmatter.date} | {node.frontmatter.length} |{" "}
+                {node.frontmatter.episode}
+              </small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
+                  __html: node.frontmatter.description,
                 }}
               />
             </div>
@@ -65,6 +68,7 @@ export const pageQuery = graphql`
             title
             description
             audio
+            episode
           }
         }
       }

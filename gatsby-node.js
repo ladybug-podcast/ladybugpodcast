@@ -22,6 +22,8 @@ exports.createPages = ({ graphql, actions }) => {
                 audio
                 description
                 slug
+                episode
+                length
               }
             }
           }

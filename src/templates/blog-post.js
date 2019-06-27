@@ -25,64 +25,72 @@ class BlogPostTemplate extends React.Component {
           title={seoTitle}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>
-          {post.frontmatter.title} {post.slug}
-        </h1>
-        <p
-          className="post-meta"
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          <span>{post.frontmatter.date}</span>
-          <a
-            className="twitter-share"
-            target="_blank"
-            onClick="ga('send', 'social', 'Twitter', 'Share', {post.frontmatter.title});"
-            href={twitterShare}
+        <div className="episode">
+          <p className="back-to-list">
+            <Link to="/">&larr; Back to episodes</Link>
+          </p>
+          <h1>
+            {post.frontmatter.title} {post.slug}
+          </h1>
+          <p
+            className="post-meta"
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1),
+            }}
           >
-            <FaTwitter size="1em" title="Share on Twitter" />
-            <span class="visually-hidden">
-              Share {post.frontmatter.title} on Twitter
+            <span>
+              {post.frontmatter.date} | {post.frontmatter.length} |{" "}
+              {post.frontmatter.episode}
             </span>
-          </a>
-        </p>
-        <Player show={post.frontmatter} />
-        <p>{post.frontmatter.description}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+            <a
+              className="twitter-share"
+              target="_blank"
+              onClick="ga('send', 'social', 'Twitter', 'Share', {post.frontmatter.title});"
+              href={twitterShare}
+            >
+              <FaTwitter size="1em" title="Share on Twitter" />
+              <span class="visually-hidden">
+                Share {post.frontmatter.title} on Twitter
+              </span>
+            </a>
+          </p>
+          <Player show={post.frontmatter} />
+          <p>{post.frontmatter.description}</p>
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </div>
       </Layout>
     )
   }
@@ -109,6 +117,8 @@ export const pageQuery = graphql`
         description
         audio
         slug
+        episode
+        length
       }
     }
   }
