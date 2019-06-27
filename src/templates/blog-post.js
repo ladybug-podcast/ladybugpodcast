@@ -57,8 +57,13 @@ class BlogPostTemplate extends React.Component {
               </span>
             </a>
           </p>
-          <Player show={post.frontmatter} />
           <p>{post.frontmatter.description}</p>
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+          <Player show={post.frontmatter} />
           <hr
             style={{
               marginBottom: rhythm(1),
