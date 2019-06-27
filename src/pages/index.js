@@ -69,6 +69,7 @@ export const pageQuery = graphql`
             description
             audio
             episode
+            length
           }
         }
       }
