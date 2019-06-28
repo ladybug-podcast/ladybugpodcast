@@ -8,6 +8,11 @@ episode: "Teaser"
 length: "3:19"
 ---
 
+## Help us out
+
+- [Leave us a review on Apple Podcasts](https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625)
+- [Subscribe to our podcast](https://link.chtbl.com/ladybugpodcast)
+
 ## Transcript
 
 **(Kelly)** Welcome to the ladybug podcast! I’m Kelly
