@@ -9,7 +9,7 @@
 
 Hosted by Kelly Vaughn, Ali Spittel, Emma Wedekind, and Lindsey Kopacz, Ladybug Podcast is debugging the tech industry. Every Monday dive into a new topic within tech, entrepreneurship, and careers.
 
-## About Ladybug Podcast
+## About our website
 Our podcast website is built using [Gatsby](https://gatsbyjs.org) and is fully open source! Find a bug? Think something could be better presented? Open a PR or issue and let us know!
 
 Special thank you to [Syntax](https://github.com/wesbos/Syntax) for giving us a starting point for our player code!
