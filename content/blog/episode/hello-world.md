@@ -15,6 +15,8 @@ length: "3:19"
 
 ## Transcript
 
+<div class="transcript">
+
 **(Kelly)** Welcome to the ladybug podcast! I’m Kelly
 
 **(Ali)** I’m Ali
@@ -40,3 +42,5 @@ I love all things CSS, which I know everyone hates but it’s my passion in life
 It’s no secret that I am an accessibility fiend. I have an accessibility blog. My mission in life isn’t really to convince stakeholders to be a good person. It’s really to influence and empower developers to care about accessibility.
 
 **(Ali)** Awesome! So we have a bunch of episodes coming up, like how to start coding, what are the hot technologies right now, how you can get your first developer job, how to balance side projects because as you can hear we have a bunch, and even more! So head on over to our site ladybug.dev to hear about all our upcoming episodes and listen to the ones we’ve already released. Can’t wait to share more with you all!
+
+</div>

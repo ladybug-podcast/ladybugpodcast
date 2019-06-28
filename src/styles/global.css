@@ -193,9 +193,19 @@ audio {
   margin-bottom: 4em;
 }
 
+.post-meta {
+  margin-bottom: 1em;
+}
+
 .post-meta span {
   display: inline-block;
   margin-right: 8px;
+}
+
+.post-meta a {
+  display: inline-block;
+  margin-right: 6px;
+  line-height: 1;
 }
 
 .back-to-list {
@@ -218,7 +228,7 @@ audio {
 .episode h1 {
   font-family: 'Merriweather', 'Georgia', serif;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .episode-content li {
@@ -268,4 +278,46 @@ audio {
 .episode-content p {
   margin-bottom: 1.25em;
   line-height: 1.6;
+}
+
+ul.post-actions {
+  list-style: none;
+  margin: 0 0 1.5em;
+  padding: 4px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.post-actions li {
+  display: inline-block;
+  margin: 3px 12px 3px 0;
+  font-size: 0.9em;
+}
+
+ul.post-actions li a {
+  line-height: 1;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  transition: all 200ms;
+}
+
+ul.post-actions li a span {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+ul.post-actions li a:hover {
+  color: var(--a11y-red);
+}
+
+.transcript {
+  padding: 12px;
+  max-height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
 }

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Player from "../components/player"
 import { rhythm, scale } from "../utils/typography"
-import { FaTwitter } from "react-icons/fa"
+import { FaTwitter, FaDownload, FaPodcast } from "react-icons/fa"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -37,26 +37,46 @@ class BlogPostTemplate extends React.Component {
             style={{
               ...scale(-1 / 5),
               display: `block`,
-              marginBottom: rhythm(1),
-              marginTop: rhythm(-1),
             }}
           >
             <span>
               {post.frontmatter.date} | {post.frontmatter.length} |{" "}
               {post.frontmatter.episode}
             </span>
-            <a
-              className="twitter-share"
-              target="_blank"
-              onClick="ga('send', 'social', 'Twitter', 'Share', {post.frontmatter.title});"
-              href={twitterShare}
-            >
-              <FaTwitter size="1em" title="Share on Twitter" />
-              <span class="visually-hidden">
-                Share {post.frontmatter.title} on Twitter
-              </span>
-            </a>
           </p>
+          <ul class="post-actions">
+            <li>
+              <a
+                className="twitter-share"
+                target="_blank"
+                onClick="ga('send', 'actions', 'Twitter', 'Share', {post.frontmatter.title});"
+                href={twitterShare}
+              >
+                <FaTwitter size="1em" title="Share on Twitter" />
+                <span>Share on Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                onClick="ga('send', 'actions', 'Download', 'Download', {post.frontmatter.title});"
+                href={post.frontmatter.audio}
+              >
+                <FaDownload size="1em" title="Download MP3" />
+                <span>Download MP3</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                onClick="ga('send', 'actions', 'Subscribe', 'Subscribe', {post.frontmatter.title});"
+                href="https://link.chtbl.com/ladybugpodcast"
+              >
+                <FaPodcast size="1em" title="Subscribe" />
+                <span>Subscribe</span>
+              </a>
+            </li>
+          </ul>
           <p>{post.frontmatter.description}</p>
           <hr
             style={{
