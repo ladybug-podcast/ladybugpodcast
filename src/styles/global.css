@@ -197,3 +197,75 @@ audio {
   display: inline-block;
   margin-right: 8px;
 }
+
+.back-to-list {
+  margin-bottom: 0;
+}
+
+.back-to-list a {
+  border: 0;
+  box-shadow: none;
+}
+
+.back-to-list a:hover {
+  color: #606060;
+}
+
+.back-to-list + h1 {
+  margin-top: 2rem;
+}
+
+.episode h1 {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.episode-content li {
+  margin-bottom: 0;
+}
+
+.episode-content ul {
+  margin-left: 1.5em;
+}
+
+.episode-content li a {
+  border-bottom: 0;
+  box-shadow: none;
+  transition: all 200ms;
+  font-weight: 400;
+}
+
+.episode-content a:hover {
+  color: var(--a11y-red);
+}
+
+.episode-content h2 {
+  text-align: left;
+  padding: 0 0 0.5em 0.75em;
+  margin: 2em 0 0.3em;
+  position: relative;
+}
+
+.episode-content h2:first-of-type {
+  margin-top: 1em;
+}
+
+.episode-content h2:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-75%);
+  height: calc(100% - 12px);
+  border-left: 6px solid var(--a11y-red);
+}
+
+.episode-content h2 + ul {
+  margin-bottom: 1em;
+}
+
+.episode-content p {
+  margin-bottom: 1.25em;
+  line-height: 1.6;
+}
