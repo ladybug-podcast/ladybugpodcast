@@ -10,8 +10,8 @@ length: "3:19"
 
 ## Help us out
 
-- [Leave us a review on Apple Podcasts](https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625)
-- [Subscribe to our podcast](https://link.chtbl.com/ladybugpodcast)
+- <a target="_blank" href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625">Leave us a review on Apple Podcasts</a>
+- <a target="_blank" href="https://link.chtbl.com/ladybugpodcast">Subscribe to our podcast</a>
 
 ## Transcript
 
