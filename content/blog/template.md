@@ -21,3 +21,6 @@ draft: true
 - <a target="_blank" href="https://link.chtbl.com/ladybugpodcast">Subscribe to our podcast</a>
 
 ## Transcript
+
+<div class="transcript">
+</div>
