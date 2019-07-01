@@ -244,6 +244,7 @@ audio {
   box-shadow: none;
   transition: all 200ms;
   font-weight: 400;
+  text-decoration: underline;
 }
 
 .episode-content a:hover {
