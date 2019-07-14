@@ -39,14 +39,14 @@ draft: false
 
 **13:43** - How we all got Started with Blogging
 
-- Lindsey mentioned her designer for her blog - [Raquel Breternitz](https://www.linkedin.com/in/raquel-breternitz/)
+- Lindsey mentioned her designer for her blog - <a href="https://www.linkedin.com/in/raquel-breternitz/" target="_blank">Raquel Breternitz</a>
 
 **21:19** - Non tech blogs??
 
 **23:46** - Lindsey&#39;s blogging workflows
 
-- [Hemmingway app](http://hemingwayapp.com)
-- [Grammarly](https://www.grammarly.com/)
+- <a href="http://hemingwayapp.com" target="_blank">Hemmingway app</a>
+- <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>
 - Using A Screen readers
 
 **28:50** - How long is the blogging process from start to finish?
@@ -88,11 +88,16 @@ draft: false
 **59:46** - What are Canonical URLs?
 
 **01:02:13** - Wins!
+- Listener Win - <a href="https://twitter.com/ljuneaul" target="_blank">Juneau</a>: Congrats on submitting an application to your first hackathon
+- Kelly - 3 weeks ahead on her newsletter content for her business!
+- Emma - Designed a UI all on her own which had very positive reception!
+- Lindsey - Stress levels have been reduced since being more organized and time blocking/batching
+- Ali - Got was at the top of Reddit for <a href="https://dev.to/offline" target="_blank">DEV's offline Screen</a>, and for once it was positive and not a dumpster fire!
 
 ## Additional Resources
 
-- [**My Blog Post Workflow: from Topic to Publication** by LadyBug Host Ali Spittel](https://dev.to/aspittel/my-blog-post-workflow-from-topic-to-publication-4n78)
-- [**My Blog Editing Process** by LadyBug Host Lindsey Kopacz](https://www.a11ywithlindsey.com/blog/blogging-editing-process)
+- <a target="_blank" href="https://dev.to/aspittel/my-blog-post-workflow-from-topic-to-publication-4n78"><strong>My Blog Post Workflow: from Topic to Publication</strong> by LadyBug Host Ali Spittel</a>
+- <a target="_blank" href="https://www.a11ywithlindsey.com/blog/blogging-editing-process"><strong>My Blog Editing Process</strong> by LadyBug Host Lindsey Kopacz</a>
 
 ## Help us out
 
@@ -432,7 +437,7 @@ That sounds to me like a big win for you.
 And speaking of wins, Lindsey, you want to take this one?
 
 **Lindsey** [01:02:13]
-Sure. So something we were doing is we all have our wins. But the best part of building this podcast is hearing your thoughts on our podcast and just hearing from everybody here. So we decided that we wanted to have listener wins. So we have one listener win and this is from Juno: "I've submitted an application for my first hackathon!" which is super, super awesome. We love hearing these types of things. And congratulations, Juno!
+Sure. So something we were doing is we all have our wins. But the best part of building this podcast is hearing your thoughts on our podcast and just hearing from everybody here. So we decided that we wanted to have listener wins. So we have one listener win and this is from Juneau: "I've submitted an application for my first hackathon!" which is super, super awesome. We love hearing these types of things. And congratulations, Juneau!
 
 **Emma** [01:02:40]
 Yeah Congrats!
