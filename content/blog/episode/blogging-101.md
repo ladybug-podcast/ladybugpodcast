@@ -11,22 +11,22 @@ draft: false
 
 ## Show Notes
 
-**0:34** - Emma&#39;s reasoning for blogging
+**0:34** - Emma's reasoning for blogging
 
 - Creating a reference for herself
 - Teaching herself something new
 
-**1:33** - Lindsey&#39;s reasoning for blogging
+**1:33** - Lindsey's reasoning for blogging
 
 - Establishing oneself as a Subject Matter Expert in accessibility
 - To empower developers to learn and care about accessibility
 
-**2:27** - Ali&#39;s reasoning for blogging
+**2:27** - Ali's reasoning for blogging
 
-- Resources for her past self / resources she wish she&#39;d had
-- Love to teach, and it&#39;s a way to teach in a way that helps exponentially more people.
+- Resources for her past self / resources she wish she'd had
+- Love to teach, and it's a way to teach in a way that helps exponentially more people.
 
-4:24 - Kelly&#39;s reasoning for blogging
+4:24 - Kelly's reasoning for blogging
 
 - For her future self to remember what she will inevitably forget
 - Being a subject matter expert in her field for potential new clients
@@ -43,7 +43,7 @@ draft: false
 
 **21:19** - Non tech blogs??
 
-**23:46** - Lindsey&#39;s blogging workflows
+**23:46** - Lindsey's blogging workflows
 
 - <a href="http://hemingwayapp.com" target="_blank">Hemmingway app</a>
 - <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>
@@ -51,16 +51,16 @@ draft: false
 
 **28:50** - How long is the blogging process from start to finish?
 
-**30:35** - Kelly&#39;s blogging workflows - writing them as newsletters
+**30:35** - Kelly's blogging workflows - writing them as newsletters
 
-**31:38** - Emma&#39;s blogging workflow either:
+**31:38** - Emma's blogging workflow either:
 
 - Word Vomit into doc, press publish
 - Get an Idea, Outline Section Headers, Fill in the Content &amp; Make Graphics
 
-**33:08** - Ali&#39;s process
+**33:08** - Ali's process
 
-- Batching Outlines, even if they&#39;re messy
+- Batching Outlines, even if they're messy
 - Fill in the blog post
 - Add in multimedia
 
