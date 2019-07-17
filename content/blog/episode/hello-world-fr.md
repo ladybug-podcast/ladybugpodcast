@@ -1,6 +1,3 @@
-##NB : Cette traduction du transcript est faite pour que les personnes qui ont du mal avec l'anglais puisse tout de même avoir accès à ce fabuleux podcast. Je ne suis pas une traductrice professionnelle, il peut donc y avoir des petites erreurs, mais je fais en sorte qu'il n'y ait pas de contresens. Si vous en trouvez un, n'hésitez pas à me le dire ! 
-
-
 ---
 title: Hello World
 date: "2019-06-24"
@@ -10,6 +7,10 @@ description: "Hello world! Welcome to the ladybug podcast. We’re debugging the
 episode: "Teaser"
 length: "3:19"
 ---
+
+##NB : Cette traduction du transcript est faite pour que les personnes qui ont du mal avec l'anglais puisse tout de même avoir accès à ce fabuleux podcast. Je ne suis pas une traductrice professionnelle, il peut donc y avoir des petites erreurs, mais je fais en sorte qu'il n'y ait pas de contresens. Si vous en trouvez un, n'hésitez pas à me le dire ! 
+
+
 
 ## Aidez-nous
 
