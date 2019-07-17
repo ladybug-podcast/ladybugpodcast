@@ -1,13 +1,14 @@
 ##NB : Cette traduction du transcript est faite pour que les personnes qui ont du mal avec l'anglais puisse tout de même avoir accès à ce fabuleux podcast. Je ne suis pas une traductrice professionnelle, il peut donc y avoir des petites erreurs, mais je fais en sorte qu'il n'y ait pas de contresens. Si vous en trouvez un, n'hésitez pas à me le dire ! 
 
+
 ---
-titre: Hello World
+title: Hello World
 date: "2019-06-24"
 audio: https://storage.pinecast.net/podcasts/8b501593-cabc-49f4-b076-b7c2e3bca56f/audio/3bdc0e4e-d1a0-4ed8-bdf4-a7c33f426fbc/aspittel__1_.mp3
 slug: "hello-world"
-description: "Hello world! Bienvenue sur le podcast ladybug. Nous débuggons le secteur des technologies."
-épisode: "Teaser"
-durée: "3:19"
+description: "Hello world! Welcome to the ladybug podcast. We’re debugging the tech industry."
+episode: "Teaser"
+length: "3:19"
 ---
 
 ## Aidez-nous
