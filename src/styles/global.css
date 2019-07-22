@@ -108,6 +108,9 @@ a:hover {
   max-width: 50rem;
   margin: 0 auto;
 }
+.episode h3 a {
+  line-height: 1.6;
+}
 footer {
   border-top: 1px solid var(--a11y-red);
   text-align: center;
