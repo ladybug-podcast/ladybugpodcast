@@ -38,12 +38,12 @@ class Sponsorships extends React.Component {
               about both technical topics and career advice for other
               developers.
             </p>
-            <b>Our sponsorships follow the format:</b>
+            <strong>Our sponsorships follow the format:</strong>
             <ul>
               <li>One $900 pre-roll slot</li>
               <li>Two $800 mid-roll slots</li>
             </ul>
-            <b>Each sponsor will also receive:</b>
+            <strong>Each sponsor will also receive:</strong>
             <ul>
               <li>a post-roll slot</li>
               <li>
@@ -55,7 +55,7 @@ class Sponsorships extends React.Component {
                 clients and our RSS feed
               </li>
             </ul>
-            <b>Each episode follows this format:</b>
+            <strong>Each episode follows this format:</strong>
             <ul>
               <li>An introduction to what the episode is about</li>
               <li>Our jingle</li>
