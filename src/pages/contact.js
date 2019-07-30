@@ -17,8 +17,8 @@ class Contact extends React.Component {
             >
               Twitter
             </a>
-            ! If you're interested in sponsorship opportunities, please email
-            hello at ladybug.dev.
+            ! If you're interested in sponsorship opportunities, please visit
+            our <a href="/sponsorships">sponsorships page</a>.
           </div>
         </div>
       </Layout>
