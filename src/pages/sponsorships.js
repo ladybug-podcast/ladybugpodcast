@@ -8,7 +8,7 @@ class Sponsorships extends React.Component {
       <Layout>
         <SEO title="Sponsorships | Ladybug Podcast 🐞" />
         <div className="contact">
-          <div className="container">
+          <div className="container sponsorships">
             <h1>Ladybug Podcast Sponsorships</h1>
             <p>
               We're Emma Wedekind, Kelly Vaughn, Lindsey Kopacz, and Ali Spittel
