@@ -22,6 +22,7 @@ export default () => (
         Newsletter
       </a>
       <Link to="/contact">Contact</Link>
+      <Link to="https://shop.ladybug.dev">Merch</Link>
     </div>
     <div className="subscribe-links">
       <a
