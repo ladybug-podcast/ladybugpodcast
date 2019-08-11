@@ -1,9 +1,9 @@
 ---
 title: Level Up With CSS - Part 1
 date: "2019-08-12"
-audio: https://storage.pinecast.net/podcasts/8b501593-cabc-49f4-b076-b7c2e3bca56f/audio/3bdc0e4e-d1a0-4ed8-bdf4-a7c33f426fbc/aspittel__1_.mp3
+audio: https://storage.pinecast.net/podcasts/8b501593-cabc-49f4-b076-b7c2e3bca56f/audio/a7e6cbbb-5abb-40f1-a644-32b25edb8f2d/css-p1-with-sponsors.mp3
 slug: "css-part-1"
-description: "Hello world! Welcome to the ladybug podcast. We’re debugging the tech industry."
+description: "Learn all about the fundamentals of CSS: from selectors to the box model."
 episode: "007"
 length: "38:38"
 draft: false
@@ -53,9 +53,11 @@ Sanity.io is a platform for structured content that comes with an open source ed
 - Absolute
 - Relative
 
-28:48 - block, inline, and inline-block
+**28:48** - block, inline, and inline-block
 
-36:11 - Wins
+**36:11** - Wins
+- LadyBug Merch Store - [https://shop.ladybug.dev/](https://shop.ladybug.dev/)
+- John signed out of his workplace Slack during his vacation!
 
 
 ## Resources
