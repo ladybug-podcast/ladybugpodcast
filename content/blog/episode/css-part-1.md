@@ -21,33 +21,37 @@ How many times have you struggled to figure out an annoying bug in your app? Wel
 
 Sanity.io is a platform for structured content that comes with an open source editor that you can customize with React. Sanity.io also comes with tooling that lets you build with structured content in React, Vue, and other frontend technologies like Svelte. It also has powerful APIs for reading and writing so that you can use the same content across any device, channel, or product. You also get powerful APIs for querying your content, you can even listen for changes in real-time, and use the write APIs to patch and make new documents from code. You can get started for free on the standard plan, and add a credit card to pay as you go for usage over the generous standard quotas. If you need advanced features like SSL and Single-Sign-On you can find all the prices and details on Sanity.io's fully transparent pricing page. Listeners of the Ladybug Podcast get a extra special plan with double the usage. Go to sanity.io/ladybug or use "ladybug" where you fill in the coupon code.
 
-
 ## Show notes
 
 **1:50** - The Pain Points
 
 **4:23** - The Syntax
+
 - Selectors
 - Declarations
 - Properties & Values
 
 **10:40** - What’s the Cascade?
+
 - <a target="_blank" href="https://dev.to/emmawedekind/css-specificity-1kca">CSS Specificity</a>
 
 **13:38** - Understanding the box model
-![](./dev-tools-box-model.png)
+![Content, with some spacing indicating the margin, then the border, then the margin, then the positioning.](./dev-tools-box-model.png)
 
 **15:23** - Pseudo Classes and Pseudo Element
+
 - <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements">Pseudo-classes and pseudo-elements
-</a>
+  </a>
 
 **19:09** - Combinators
+
 - Descendant selector
 - Child selector
 - Adjacent sibling selector
 - General sibling selector
 
-23:11 - Positioning
+**23:11** - Positioning
+
 - Static
 - Fixed
 - Absolute
@@ -56,9 +60,9 @@ Sanity.io is a platform for structured content that comes with an open source ed
 **28:48** - block, inline, and inline-block
 
 **36:11** - Wins
+
 - LadyBug Merch Store - [https://shop.ladybug.dev/](https://shop.ladybug.dev/)
 - John signed out of his workplace Slack during his vacation!
-
 
 ## Resources
 
