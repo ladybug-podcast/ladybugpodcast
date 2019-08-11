@@ -338,3 +338,7 @@ ul.post-actions li a:hover {
   border-bottom: none;
   box-shadow: none;
 }
+
+.image-link img {
+  max-width: 250px;
+}
