@@ -9,11 +9,33 @@ length: "3:19"
 draft: true
 ---
 
-## Show links
+## Sponsors
 
-- [Link title](https://google.com)
-- [Link title](https://google.com)
-- [Link title](https://google.com)
+Shout out to our sponsors for supporting the LadyBug Podcast!
+
+<a class="image-link" target="_blank" href="https://logrocket.com/"><img src="link/to/logo" alt="Company Name"></a>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="image-link" target="_blank" href="https://logrocket.com/"><img src="link/to/logo" alt="Company Name"></a>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Show notes
+
+**0:00** - Section title
+
+**0:00** - Section title
+
+- List item
+- List item
+- List item
+
+## Resources
+
+- <a target="_blank" href="https://www.google.com">Link Title</a>
+- <a target="_blank" href="https://www.google.com">Link Title</a>
+- <a target="_blank" href="https://www.google.com">Link Title</a>
 
 ## Help us out
 
@@ -21,6 +43,11 @@ draft: true
 - <a target="_blank" href="https://link.chtbl.com/ladybugpodcast">Subscribe to our podcast</a>
 
 ## Transcript
+
+<!-- The Transcript will not be live until we merge this into master -->
+<!-- Replace "css-part-1.md" with the file name of the episode -->
+
+<a target="_blank" href="https://github.com/ladybug-podcast/ladybugpodcast/blob/master/content/blog/episode/css-part-1.md">Edit Transcripts</a>
 
 <div class="transcript">
 </div>
