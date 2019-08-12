@@ -333,3 +333,12 @@ ul.post-actions li a:hover {
   overflow-y: scroll;
   border: 1px solid #ccc;
 }
+
+.image-link {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.image-link img {
+  max-width: 250px;
+}
