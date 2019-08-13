@@ -1,11 +1,11 @@
 ---
 title: Level Up With CSS - Part 2
 date: "2019-08-15"
-audio: https://storage.pinecast.net/podcasts/8b501593-cabc-49f4-b076-b7c2e3bca56f/audio/a7e6cbbb-5abb-40f1-a644-32b25edb8f2d/css-p1-with-sponsors.mp3
+audio: https://pinecast.com/listen/b3a6126a-b711-4020-b00e-a555a9b330e3.mp3
 slug: "css-part-2"
-description: "Flexbox, Grid, UI Frameworks, OH MY!"
+description: "In the first part of our CSS episode, we discussed the foundations. In this special bonus episode we'll continue the conversation by covering some more in-depth areas of CSS, like layouts with Grid and Flexbox, animations, media queries, naming conventions, pre-processors, and frameworks."
 episode: "008"
-length: "38:38"
+length: "41:03"
 draft: false
 ---
 
