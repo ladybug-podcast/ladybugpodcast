@@ -53,7 +53,7 @@ draft: false
 
 **37:50** - Wins
 
-1. Bhavani Ravi - Made my first code contribution to a big open source python project, one and only pandas. It was a 6 month effort. The code review process was hectic, I felt down here and there but kept at it and 6 months later, got my first approval. It&#39;s all worth it
+1. <a href="https://twitter.com/geeky_bhavani" target="_blank">Bhavani Ravi</a> - Made my first code contribution to a big open source python project, one and only pandas. It was a 6 month effort. The code review process was hectic, I felt down here and there but kept at it and 6 months later, got my first approval. It&#39;s all worth it
 2. Emma - My wedding! I said my vows in German!
 3. Lindsey - Opened up a few new tiers of my patreon - 1 for getting blog posts a day early if you pay and one for 1:1 accessibility sessions once a quarter! Pretty excited about these!
 4. Kelly - We rebranded The Taproom
