@@ -1,13 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import {
-  FaGooglePlay,
-  FaSpotify,
-  FaItunes,
-  FaTwitter,
-  FaRss,
-  FaPodcast,
-} from "react-icons/fa"
+import { FaGooglePlay, FaSpotify, FaItunes, FaPodcast } from "react-icons/fa"
 
 export default () => (
   <div className="nav">
@@ -25,13 +18,6 @@ export default () => (
       <a href="https://shop.ladybug.dev">Shop</a>
     </div>
     <div className="subscribe-links">
-      <a
-        href="https://twitter.com/ladybugpodcast"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaTwitter size="1.6em" title="Follow on Twitter" />
-      </a>
       <a
         href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625"
         target="_blank"
@@ -59,13 +45,6 @@ export default () => (
         rel="noopener noreferrer"
       >
         <FaPodcast size="1.6em" title="subscribe on Stitcher" />
-      </a>
-      <a
-        href="https://pinecast.com/feed/ladybug-podcast"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaRss size="1.6em" title="access our RSS feed" />
       </a>
     </div>
   </div>
