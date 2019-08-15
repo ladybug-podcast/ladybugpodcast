@@ -62,8 +62,8 @@ draft: false
 ## Resources
 
 - <a target="_blank" href="https://flexboxfroggy.com/">Flexbox Froggy</a>
-- <a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Grid Garden</a>
-- <a target="_blank" href="https://cssgridgarden.com/">CSS Tricks a Complete Guide To Flexbox</a>
+- <a target="_blank" href="https://cssgridgarden.com/">Grid Garden</a>
+- <a target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox"/>CSS Tricks a Complete Guide To Flexbox</a>
 - <a target="_blank" href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks A Complete Guide To Grid</a>
 - <a target="_blank" href="https://levelup.gitconnected.com/when-to-use-css-flexbox-vs-grid-or-both-c1a5f01dc88a">CSS Flexbox vs. CSS Grid</a>
 - <a target="_blank" href="http://www.flexboxdefense.com/">Flexbox Defense</a>
