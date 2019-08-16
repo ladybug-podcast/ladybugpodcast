@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
-import SwUpdate from "./sw-update"
+// import SwUpdate from "./sw-update"
 
 class Footer extends React.Component {
   render() {
