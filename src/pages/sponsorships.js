@@ -11,7 +11,7 @@ class Sponsorships extends React.Component {
           <div className="container sponsorships">
             <h1>Ladybug Podcast Sponsorships</h1>
             <p>
-              We're Emma Wedekind, Kelly Vaughn, Lindsey Kopacz, and Ali Spittel
+              We're Emma Wedekind, Kelly Vaughn, and Ali Spittel
               - four seasoned software developers working in different sectors.
               We wanted to add our voices to the podcasting sphere and share our
               diverse experiences and advice. We have great discussions around

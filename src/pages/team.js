@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import ali from "../../content/assets/ali.png"
 import emma from "../../content/assets/emma.png"
 import kelly from "../../content/assets/kelly.jpg"
-import lindsey from "../../content/assets/lindsey.png"
 
 class Team extends React.Component {
   render() {
@@ -14,17 +13,7 @@ class Team extends React.Component {
         <SEO title="Team | Ladybug Podcast 🐞" />
         <div className="team">
           <div className="hosts">
-            <div className="hosts__item">
-              <img src={lindsey} width="100" height="100" alt="" />
-              <h2>Lindsey Kopacz</h2>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://twitter.com/LittleKope`}
-              >
-                @LittleKope
-              </a>
-            </div>
+          
             <div className="hosts__item">
               <img src={ali} width="100" height="100" alt="" />
               <h2>Ali Spittel</h2>

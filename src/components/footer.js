@@ -22,7 +22,7 @@ class Footer extends React.Component {
         </a>
         <p>
           &copy; Ladybug Podcast 2019. Produced by Kelly Vaughn, Ali Spittel,
-          Emma Wedekind, and Lindsey Kopacz.
+          and Emma Wedekind.
         </p>
         {/* <SwUpdate /> */}
       </footer>

@@ -42,15 +42,11 @@ function Bio() {
               <a href="https://alispit.tel" target="_blank">
                 Ali Spittel
               </a>
-              ,{" "}
+              , &amp;&amp;{" "}
               <a href="https://emmawedekind.com/" target="_blank">
                 Emma Wedekind
               </a>
-              , &amp;&amp;{" "}
-              <a href="https://www.a11ywithlindsey.com/" target="_blank">
-                Lindsey Kopacz
-              </a>{" "}
-              debug the tech industry.
+              {" "} debug the tech industry.
             </h2>
           </React.Fragment>
         )
