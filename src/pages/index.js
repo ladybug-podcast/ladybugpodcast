@@ -14,8 +14,24 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title="LadyBug Podcast 🐞">
-        <SEO title="Ladybug Podcast 🐞 | Women in Tech Podcast" />
-
+        <SEO title="Ladybug Podcast 🐞 | Women Talking Tech" />
+        <h1>We're taking a small break!</h1>
+        <small>September 2, 2019</small>
+        <p>
+          We've decided to take a short break from posting new episodes. During
+          the next two weeks we'll be focusing on ourselves. We want to ensure
+          that you're getting the best content we have to offer.
+        </p>
+        <p>
+          One of our hosts, Lindsey Kopacz, has left the podcast for personal
+          reasons. We wish her all the best. We appreciate and genuinely thank
+          you for all your support ❤️
+        </p>
+        <p>See you in two weeks!</p>
+        <p>
+          Much Love, <br /> The Ladybug Podcast
+        </p>
+        <hr />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
