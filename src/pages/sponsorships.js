@@ -11,13 +11,12 @@ class Sponsorships extends React.Component {
           <div className="container sponsorships">
             <h1>Ladybug Podcast Sponsorships</h1>
             <p>
-              We're Emma Wedekind, Kelly Vaughn, and Ali Spittel
-              - four seasoned software developers working in different sectors.
-              We wanted to add our voices to the podcasting sphere and share our
-              diverse experiences and advice. We have great discussions around
-              how to start coding, the hot technologies right now, how to get
-              your first developer job, imposter syndrome, how to write CSS and
-              more!
+              We're Emma Wedekind, Kelly Vaughn, and Ali Spittel - three
+              seasoned software developers working in different sectors. We
+              wanted to add our voices to the podcasting sphere and share our
+              experiences and advice. We have great discussions around how to
+              start coding, the hot technologies right now, how to get your
+              first developer job, imposter syndrome, how to write CSS and more!
             </p>
             <p>
               Our podcast has been reaching a large audience of diverse
