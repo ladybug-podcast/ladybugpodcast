@@ -1,7 +1,7 @@
 ---
 title: What The Heck Is GraphQL?
 date: "2019-09-16"
-audio: https://pinecast.com/listen/7277ecc7-0bbf-44e5-b11f-b4556935a196.mp3
+audio: https://pinecast.com/listen/a392ada5-317d-4904-a04c-34989accdb57.mp3
 slug: "what-the-heck-is-graphql"
 description: "GraphQL has taken this industry by storm, but what is it exactly? In this special episode of the Ladybug Podcast we’ve invited 14 GraphQL experts from the community to educate us on all things GraphQL!"
 episode: "011"
