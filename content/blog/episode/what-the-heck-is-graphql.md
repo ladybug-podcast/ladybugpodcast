@@ -62,6 +62,9 @@ Are you a developer looking for your next challenge? Meet Shopify. We’re on a 
 <a target="_blank" href="https://twitter.com/molly_struve">Molly Struve</a> 
 After struggling for 4 days to debug a problem she figured it out and contacted the software creators to update the docs!
 
+## Nominate A Ladybug Podcast Guest!
+Want to nominate yourself, or someone else, to be on the Ladybug Podcast? Fill out our [nomination form](https://forms.gle/SUK6Usk6EnnkTsjG8) to let us know!
+
 ## Resources
 
 - <a target="_blank" href="https://medium.com/@erinfoox/understanding-graphql-finally-a75986d8df0a">Understanding GraphQL</a>
