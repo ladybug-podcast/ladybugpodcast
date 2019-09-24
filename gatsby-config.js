@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: ``,
     author: `Emma Wedekind, Kelly Vaughn, Ali Spittel`,
-    description: `Listen to Kelly Vaughn, Ali Spittel, Emma Wedekind, four women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.`,
+    description: `Listen to Kelly Vaughn, Ali Spittel, and Emma Wedekind, three women in tech, discuss topics such as how to get your first job in tech and how to manage side projects.`,
     siteUrl: `https://ladybug.dev`,
     social: {
       twitter: `ladybugpodcast`,

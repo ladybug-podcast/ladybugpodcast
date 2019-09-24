@@ -15,7 +15,7 @@ class BlogPostTemplate extends React.Component {
     const seoTitle = `${post.frontmatter.title} | Ladybug Podcast 🐞`
     const shareTitle = `Listen to ${
       post.frontmatter.title
-    }, a @LadybugPodcast episode by @kvlly, @emmawedekind, @aspittel, and @littlekope!`
+    }, a @LadybugPodcast episode by @kvlly, @emmawedekind, and @aspittel!`
     const shareUrl = `https://ladybug.dev/episode/${post.frontmatter.slug}`
     const twitterShare = `//twitter.com/share?text=${shareTitle}&amp;url=${shareUrl}`
 
