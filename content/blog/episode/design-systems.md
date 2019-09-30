@@ -41,6 +41,16 @@ How many times have you struggled to figure out an annoying bug in your app? Wel
 
 ### Design Systems
 
+## Resources
+
+- <a target="_blank" href="https://www.invisionapp.com/design-system-manager">Invision Design System Manager (DSM)</a>
+- <a target="_blank" href="https://www.figma.com/">Figma</a>
+- <a target="_blank" href="https://www.sketch.com">Sketch</a>
+- <a target="_blank" href="https://patternlab.io/">Pattern Lab</a> by Brad Frost
+- <a target="_blank" href="https://storybook.js.org/">Storybook</a>
+- <a target="_blank" href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic Design</a> by Brad Frost
+- <a target="_blank" href="https://slides.com/tatianamac/systems-of-systems#/">System of Systems</a> by Tatiana Mac
+
 ## Help us out
 
 - <a target="_blank" href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625">Leave us a review on Apple Podcasts</a>
