@@ -15,8 +15,13 @@ draft: false
 
 Shout out to our sponsors for supporting the LadyBug Podcast!
 
-<a class="image-link" target="_blank" href="https://logrocket.com">
+<p><a class="image-link" target="_blank" href="https://logrocket.com">
 <img src="../../assets/logrocket.svg" alt="LogRocket Website"></a>
+</p>
+<p><a class="image-link" target="_blank" href="https://do.co/ladybug">
+<img src="../../assets/digitalocean.svg" alt="Digital Ocean Website">
+</a>
+</p>
 
 ## Show Notes
 
