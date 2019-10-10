@@ -10,13 +10,28 @@ import { FaRegGrinSquintTears } from "react-icons/fa"
 
 class Bio extends React.Component {
   render() {
-    const { location } = this.props
-    this.who = location.state.who
-    this.img = ''
-    if (this.who == 'ali') this.img = ali
-    if (this.who == 'kelly') this.img = kelly
-    if (this.who == 'emma') this.img = emma
-    
+    const { location } = this.props;
+
+    this.who = 'ali';
+
+    if (location.state){
+      this.who = location.state.who;
+    }
+
+    this.img = 'ali';
+
+    switch (this.who) {
+      case 'ali':
+        this.img = ali;
+        break;
+      case 'ali':
+        this.img = kelly;
+        break;
+      case 'emma':
+        this.img = emma;
+        break;
+    }
+
     return (
       <Layout>
         <SEO title="Team | Ladybug Podcast 🐞" />
