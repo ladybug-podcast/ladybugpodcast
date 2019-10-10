@@ -24,7 +24,7 @@ class Bio extends React.Component {
       case 'ali':
         this.img = ali;
         break;
-      case 'ali':
+      case 'kelly':
         this.img = kelly;
         break;
       case 'emma':
