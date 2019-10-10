@@ -153,6 +153,9 @@ h2 {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+.hosts_bio {
+  margin-top: 15px;
+}
 @media (max-width: 800px) {
   .hosts {
     max-width: 400px;

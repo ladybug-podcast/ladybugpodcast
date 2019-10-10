@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 import ali from "../../content/assets/ali.png"
 import emma from "../../content/assets/emma.png"
@@ -15,8 +16,8 @@ class Team extends React.Component {
           <div className="hosts">
           
             <div className="hosts__item">
-              <img src={ali} width="100" height="100" alt="" />
-              <h2>Ali Spittel</h2>
+            <img src={ali} width="100" height="100" alt="" />
+              <Link to="/bio" state={{ who: 'ali'}}><h2>Ali Spittel</h2></Link>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -27,7 +28,7 @@ class Team extends React.Component {
             </div>
             <div className="hosts__item">
               <img src={emma} width="100" height="100" alt="" />
-              <h2>Emma Wedekind</h2>
+              <Link to="/bio" state={{ who: 'emma'}}><h2>Emma Wedekind</h2></Link>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +39,7 @@ class Team extends React.Component {
             </div>
             <div className="hosts__item">
               <img src={kelly} width="100" height="100" alt="" />
-              <h2>Kelly Vaughn</h2>
+              <Link to="/bio" state={{ who: 'kelly'}}><h2>Kelly Vaughn</h2></Link>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
