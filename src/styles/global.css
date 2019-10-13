@@ -85,7 +85,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 3px;
-  border-bottom: 1.5px solid var(--a11y-red);
   transition: border 0.2s ease-in, padding 0.2s linear;
 }
 a:hover {
@@ -345,4 +344,8 @@ ul.post-actions li a:hover {
 .image-link img {
   max-width: 200px;
   width: 12.5rem;
+}
+
+.image-link-preserve-ratio {
+  box-shadow: none;
 }
