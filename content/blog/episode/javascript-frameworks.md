@@ -1,5 +1,5 @@
 ---
-title: React, Vue, && Anglular, OH MY!
+title: React, Vue, && Angular, OH MY!
 date: "2019-10-13"
 audio: https://pinecast.com/listen/c5f1451d-f587-4498-aa4e-ede696129492.mp3
 slug: "javascript-frameworks"
