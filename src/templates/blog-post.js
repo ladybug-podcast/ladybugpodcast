@@ -17,7 +17,9 @@ class BlogPostTemplate extends React.Component {
       post.frontmatter.title
     }, a @LadybugPodcast episode by @kvlly, @emmawedekind, and @aspittel!`
     const shareUrl = `https://ladybug.dev/episode/${post.frontmatter.slug}`
-    const twitterShare = `//twitter.com/share?text=${shareTitle}&amp;url=${shareUrl}`
+    const twitterShare = `//twitter.com/share?text=${encodeURIComponent(
+      shareTitle
+    )}&amp;url=${shareUrl}`
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
