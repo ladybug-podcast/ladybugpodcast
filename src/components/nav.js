@@ -17,7 +17,6 @@ export default () => (
         href="https://dev.us3.list-manage.com/subscribe?u=a1e57cb6d1b212102fc5d5265&id=dd3f5f0b2d"
         target="_blank"
         rel="noopener noreferrer"
-        rel="noopener noreferrer"
       >
         Newsletter
       </a>

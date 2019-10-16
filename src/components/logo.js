@@ -35,18 +35,30 @@ function Bio() {
             <h1 className="visually-hidden">LadyBug Podcast</h1>
             <h2 className="by-line">
               Listen to{" "}
-              <a href="https://kvlly.com/" target="_blank">
+              <a
+                href="https://kvlly.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Kelly Vaughn
               </a>
               ,{" "}
-              <a href="https://alispit.tel" target="_blank">
+              <a
+                href="https://alispit.tel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Ali Spittel
               </a>
               , &amp;&amp;{" "}
-              <a href="https://emmawedekind.com/" target="_blank">
+              <a
+                href="https://emmawedekind.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Emma Wedekind
-              </a>
-              {" "} debug the tech industry.
+              </a>{" "}
+              debug the tech industry.
             </h2>
           </React.Fragment>
         )
