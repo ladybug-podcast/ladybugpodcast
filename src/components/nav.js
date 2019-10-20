@@ -5,6 +5,7 @@ import {
   FaSpotify,
   FaItunes,
   FaTwitter,
+  FaGithubAlt,
   FaRss,
   FaPodcast,
 } from "react-icons/fa"
@@ -31,6 +32,13 @@ export default () => (
         rel="noopener noreferrer"
       >
         <FaTwitter size="1.6em" title="Follow on Twitter" />
+      </a>
+      <a
+        href="https://github.com/ladybug-podcast/ladybugpodcast.git"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaGithubAlt size="1.6em" title="Follow our Development on Github" />
       </a>
       <a
         href="https://podcasts.apple.com/us/podcast/ladybug-podcast/id1469229625"
