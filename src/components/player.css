@@ -149,13 +149,13 @@ html {
 
 @media (max-width:1680px) {
   .player{
-       position:sticky;
-       top:0;
-       flex-shrink: 0;
-       padding: 20px;
-       background: rgb(255, 255, 255) !important;
-       color: rgb(255, 255, 255);
-       z-index: 9999;
+      position:sticky;
+      top:0;
+      flex-shrink: 0;
+      padding: 20px;
+      background: rgb(255, 255, 255) !important;
+      color: rgb(255, 255, 255);
+      z-index: 9999;
   }
 }
 
