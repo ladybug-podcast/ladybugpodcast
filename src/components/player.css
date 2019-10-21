@@ -1,8 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
 .player {
   display: grid;
   grid-template-columns: 66% 31%;
   grid-column-gap: 1rem;
   padding: 1rem;
+  overflow:hidden;
 }
 
 .player__section--left {
@@ -142,3 +146,16 @@
     grid-row-gap: 1rem;
   }
 }
+
+@media (max-width:1680px) {
+  .player{
+       position:sticky;
+       top:0;
+       flex-shrink: 0;
+       padding: 20px;
+       background: rgb(255, 255, 255) !important;
+       color: rgb(255, 255, 255);
+       z-index: 9999;
+  }
+}
+
