@@ -123,6 +123,54 @@
   justify-content: space-between;
 }
 
+.player--sticky {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  color: white;
+  background-color: #404040;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  z-index: 1;
+  animation-name: showplayer;
+  animation-duration: 0.6s
+}
+
+.player--sticky
+.player__progress-loaded,
+.player__buttons [class^="player__"] {
+  background-color: white;
+  color: #404040;
+}
+
+.player--sticky
+.player__speed {
+  color: white;
+}
+
+.player--sticky
+.player__slider {
+  border: 1px solid #404040;
+}
+
+.player--sticky
+.player__section--right {
+  justify-content: normal;
+}
+
+@keyframes showplayer {
+  from {
+    bottom:-100%;
+  }
+  to {
+    bottom:0;
+  }
+}
+
 @media only screen and (min-width: 767px) {
   .player {
     grid-template-columns: 14rem 7rem auto;
@@ -140,5 +188,91 @@
   .player {
     grid-template-rows: 5rem 4rem;
     grid-row-gap: 1rem;
+  }
+
+  .player--sticky {
+    width: 90%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    grid-column-gap: 0;
+  }
+
+  .player--sticky {
+    width: 90%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .player--sticky
+  .player__control-time {
+    order: 1;
+    text-align: center;
+  }
+
+  .player--sticky
+  .player__section--left {
+    width: 100%;
+  }
+
+  .player--sticky
+  .player__buttons {
+    order: 2;
+    justify-content: space-around;
+  }
+
+  .player--sticky
+  .player__buttons button {
+    margin: 0px 5px;
+  }
+
+  .player--sticky
+  .player__section--middle {
+    display: none;
+  }
+
+  .player--sticky
+  .player__section--right {
+    width: 85%;
+    flex-direction: row;
+    height: 10px;
+  }
+
+  .player--sticky
+  .player__section--right
+  .player__progress {
+    flex: 1;
+  }
+
+  .player--sticky
+  .player__section--right
+  #podcast-title {
+    display: none;
+  }
+
+  .player--sticky
+  .player__section--right
+  .player__title button {
+    line-height: 0.5;
+  }
+
+  .player--sticky
+  .player__section--right
+  .player__slider {
+    width: 1em;
+    height: 1em;
+    top: 0;
+    bottom: 0;
+    top: -7px;
+  }
+
+  .player--sticky
+  .player__section--right
+  .player__progress-loaded,
+  .player__progress-played {
+    height: 0.5em;
   }
 }
