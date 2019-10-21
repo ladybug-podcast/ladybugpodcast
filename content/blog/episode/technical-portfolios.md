@@ -35,6 +35,7 @@ Netlify is the premiere way to build and manage fast modern websites that run wi
 - [Squarespace](https://www.squarespace.com/)
 - [Dribbble](https://dribbble.com/)
 - [Ben Halpern's Portfolio](http://benhalpern.com/)
+- [Timo Becker's Portfolio](https://timobecker.com/)
 - [Julia Khusainova's Portfolio](http://julia.im/)
 - [Developer Portfolios](https://github.com/emmawedekind/developer-portfolios)
 
