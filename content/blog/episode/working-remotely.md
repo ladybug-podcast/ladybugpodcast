@@ -34,8 +34,8 @@ Learn more about RC and how to apply at: www.recurse.com
 **Pros & cons** - ADD TIMESTAMP  
 **What makes a successful remote work experience?** - ADD TIMESTAMP
 **Should you work remotely as your first job?** - ADD TIMESTAMP  
-**Personality traits for a healthy remote work experience** - ADD TIMESTAMP
-**Things nobody tells you about working remotely** - ADD TIMESTAMP
+**Personality traits for a healthy remote work experience** - ADD TIMESTAMP  
+**Things nobody tells you about working remotely** - ADD TIMESTAMP  
 **Tips for working remotely** - ADD TIMESTAMP
 
 ## Resources
