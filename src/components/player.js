@@ -13,6 +13,8 @@ class Player extends React.Component {
     let lastVolumePref = 1
     let lastPlaybackRate = 1
 
+    this.handleScroll = this.handleScroll.bind(this)
+
     this.state = {
       progressTime: 50,
       isPlaying: false,
@@ -22,6 +24,14 @@ class Player extends React.Component {
       playbackRate: lastPlaybackRate,
       timeWasLoaded: lastPlayed !== 0,
     }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -175,6 +185,17 @@ class Player extends React.Component {
     this.setState({ playbackRate })
   }
 
+  handleScroll = () => {
+    const playerScrollY = document.getElementById("thanks-message").offsetTop;
+    const windowScrollY = window.pageYOffset;
+    const controls = document.getElementsByClassName("player")[0];
+    if (windowScrollY >= playerScrollY) {
+      controls.classList.add("player--sticky");
+    } else {
+      controls.classList.remove("player--sticky");
+    }
+  }
+
   render() {
     const { isPlaying, currentTime, duration, playbackRate } = this.state
     const { show } = this.props
@@ -218,7 +239,7 @@ class Player extends React.Component {
                 <span className="seconds">15</span>
               </button>
             </div>
-            <p style={{ margin: 0 }}>
+            <p style={{ margin: 0 }} className="player__control-time">
               {formatTime(currentTime)} / {formatTime(duration)}
             </p>
           </div>
@@ -272,7 +293,7 @@ class Player extends React.Component {
             </div>
           </div>
         </div>
-        <span style={{ fontSize: "0.625rem" }}>
+        <span style={{ fontSize: "0.625rem" }} id="thanks-message">
           This player's code is loosely copy and pasted from{" "}
           <a href="https://github.com/wesbos/Syntax/blob/master/components/Player.js">
             Syntax.fm
