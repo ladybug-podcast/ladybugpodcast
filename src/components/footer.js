@@ -7,6 +7,7 @@ class Footer extends React.Component {
       <footer>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://www.netlify.com"
           style={{
             border: "none",

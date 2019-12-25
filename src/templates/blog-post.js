@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    /* const { previous, next } = this.props.pageContext */
     const seoTitle = `${post.frontmatter.title} | Ladybug Podcast 🐞`
     const shareTitle = `Listen to ${
       post.frontmatter.title
@@ -51,6 +51,7 @@ class BlogPostTemplate extends React.Component {
               <a
                 className="twitter-share"
                 target="_blank"
+                rel="noopener noreferrer"
                 onClick="ga('send', 'actions', 'Twitter', 'Share', {post.frontmatter.title});"
                 href={twitterShare}
               >
@@ -61,6 +62,7 @@ class BlogPostTemplate extends React.Component {
             <li>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 onClick="ga('send', 'actions', 'Download', 'Download', {post.frontmatter.title});"
                 href={post.frontmatter.audio}
               >
@@ -71,6 +73,7 @@ class BlogPostTemplate extends React.Component {
             <li>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 onClick="ga('send', 'actions', 'Subscribe', 'Subscribe', {post.frontmatter.title});"
                 href="https://link.chtbl.com/ladybugpodcast"
               >

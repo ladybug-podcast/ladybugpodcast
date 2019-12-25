@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/rss.xml"
+  to = "https://pinecast.com/feed/ladybug-podcast"
+  status = 301
+  force = false
