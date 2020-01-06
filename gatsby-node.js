@@ -1,72 +1,32 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require("path")
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createPage } = boundActionCreators
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  return graphql(
-    `
-      {
-        allMarkdownRemark(
-          filter: { fields: { draft: { eq: false } } }
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                audio
-                description
-                slug
-                episode
-                length
-              }
+  const episodeTemplate = path.resolve("src/templates/episode.js")
+
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              path
             }
           }
         }
       }
-    `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
+    }
+  `).then(res => {
+    if (res.errors) {
+      return Promise.reject(res.errors)
     }
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
-
+    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
+        path: node.frontmatter.path,
+        component: episodeTemplate,
       })
     })
-
-    return null
   })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
 }

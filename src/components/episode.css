@@ -1,0 +1,148 @@
+.episode {
+  display: flex;
+  font-family: "Montserrat";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.episode-page-header {
+  background: url("../images/brand/episode-header-background.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  border-radius: 4px;
+  position: relative;
+  top: -80px;
+}
+
+.banner-margin {
+  margin-top: 40px;
+}
+
+.episode-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.episode-length {
+  margin: 0;
+}
+
+.play {
+  margin-right: 48px;
+  width: 64px;
+}
+
+.episode-title {
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.episode-date {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.episode-description {
+  max-width: 580px;
+}
+
+.latest-episode-title {
+  margin: 0;
+}
+
+.player[value] {
+  width: 650px;
+  height: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+progress {
+  background-color: white;
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-bar {
+  /* style rules */
+  background: white;
+  border-radius: 4px;
+}
+progress::-webkit-progress-value {
+  background: #3c2829;
+  border-radius: 4px;
+}
+progress::-moz-progress-bar {
+  /* style rules */
+  background: #3c2829;
+  border-radius: 4px;
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-total-time,
+.player-current-time {
+  margin: 4px 0;
+}
+
+.player-total-time {
+  align-self: flex-end;
+}
+
+.audio-control {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+@media (max-width: 500px) {
+  .episode {
+    margin-top: 16px;
+  }
+
+  .episode-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .player-container {
+    width: 80%;
+  }
+
+  .player[value] {
+    width: 100%;
+  }
+
+  .episode-info {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .audio-control {
+    margin-bottom: 16px;
+  }
+
+  .episode-page-header {
+    top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .episode.episode-page-header {
+    width: 100vw;
+  }
+}
