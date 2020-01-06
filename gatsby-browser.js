@@ -1,9 +1,7 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
-import {SW_UPDATE_EVENT} from './service-worker-constants';
-import "./src/styles/global.css"
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/browser-apis/
+ */
 
-export function onServiceWorkerUpdateReady(){
-  window.dispatchEvent(new Event(SW_UPDATE_EVENT));
-}
+// You can delete this file if you're not using it

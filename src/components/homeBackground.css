@@ -1,0 +1,42 @@
+.home-background {
+  width: 100vw;
+  height: 550px;
+  background-color: #f15457;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.triangle-wrapper {
+  width: 100%;
+  height: calc(100% + 40px);
+  position: relative;
+}
+
+.home-background-triangle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+}
+
+.spot {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 90;
+}
+
+@media (max-width: 700px) {
+  .home-background {
+    height: 710px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-background {
+    height: 1000px;
+  }
+}
