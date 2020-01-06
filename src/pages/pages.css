@@ -235,10 +235,6 @@ li {
 }
 
 @media (max-width: 500px) {
-  main {
-    /* margin-top: 40px; */
-  }
-
   .about-name,
   .about-title,
   .about-location {
