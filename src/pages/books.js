@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import PageHeader from "../components/PageHeader"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import "./pages.css"
 
 const BooksPage = ({ data }) => (
@@ -46,7 +46,7 @@ const BooksPage = ({ data }) => (
         </div>
       </div>
     </main>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 

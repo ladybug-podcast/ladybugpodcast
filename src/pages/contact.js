@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import PageHeader from "../components/PageHeader"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import "./pages.css"
 
 const ContactPage = () => (
@@ -95,7 +95,7 @@ const ContactPage = () => (
         with any questions or to sponsor the show!
       </p>
     </main>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 

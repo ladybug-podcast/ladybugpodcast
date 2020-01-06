@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import PageHeader from "../components/PageHeader"
 import TeamMemberBlock from "../components/TeamMemberBlock"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import { kellyBio, emmaBio, aliBio } from "../data/bios"
 import "./pages.css"
 
@@ -41,7 +41,7 @@ const AboutPage = ({ data }) => (
         links={aliBio.links}
       />
     </main>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 

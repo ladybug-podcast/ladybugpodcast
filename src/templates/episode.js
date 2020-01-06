@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import PageHeader from "../components/PageHeader"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import Player from "../components/Player"
 
 export default function Template({ data }) {
@@ -39,7 +39,7 @@ export default function Template({ data }) {
           }}
         />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

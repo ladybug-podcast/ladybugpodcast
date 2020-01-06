@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import HomeHeader from "../components/HomeHeader"
 import EpisodeBlock from "../components/EpisodeBlock"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 import "./pages.css"
 
 const IndexPage = ({ data }) => {
@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
         <EpisodeBlock episodeInfo={data.allMarkdownRemark.edges[2]} />
         <EpisodeBlock episodeInfo={data.allMarkdownRemark.edges[3]} />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
