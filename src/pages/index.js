@@ -1,80 +1,45 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { FaPlayCircle } from "react-icons/fa"
-
-import { rhythm } from "../utils/typography"
-
-import Layout from "../components/layout"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
+import HomeHeader from "../components/HomeHeader"
+import EpisodeBlock from "../components/EpisodeBlock"
+import Footer from "../components/Footer"
+import "./pages.css"
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const posts = data.allMarkdownRemark.edges
-
-    return (
-      <Layout location={this.props.location} title="LadyBug Podcast 🐞">
-        <SEO title="Ladybug Podcast 🐞 | Women Talking Tech" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug} className="episode">
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  <FaPlayCircle /> {title}
-                </Link>
-              </h3>
-
-              <small>
-                {node.frontmatter.date} | {node.frontmatter.length} |{" "}
-                {node.frontmatter.episode}
-              </small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description,
-                }}
-              />
-            </div>
-          )
-        })}
-      </Layout>
-    )
-  }
+const IndexPage = ({ data }) => {
+  return (
+    <div>
+      <SEO title="Ladybug Podcast" />
+      <HomeHeader latestEpisode={data.allMarkdownRemark.edges[0]} />
+      <main className="home-main">
+        <h2>Recent Episodes</h2>
+        <EpisodeBlock episodeInfo={data.allMarkdownRemark.edges[1]} />
+        <EpisodeBlock episodeInfo={data.allMarkdownRemark.edges[2]} />
+        <EpisodeBlock episodeInfo={data.allMarkdownRemark.edges[3]} />
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
+export const blogsQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      filter: { fields: { draft: { eq: false } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            path
             title
+            formattedDate
             description
-            audio
             episode
             length
+            audio
           }
         }
       }
     }
   }
 `
+
+export default IndexPage
